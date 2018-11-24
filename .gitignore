@@ -4,4 +4,4 @@ _site
 vendor
 .DS_Store
 .idea
-.bundle
+.ruby-version

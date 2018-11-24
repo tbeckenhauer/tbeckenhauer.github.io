@@ -19,7 +19,6 @@ var employees = {
       first: 'Thomas',
       last: 'Beckenhauer'
     },
-    payScale: payScales.level10,
     locationPath: 'downtownBuilding.awesomeProductTeamFloor.windowSeat',
     position: positions.developer.superStar,
     editor: editors.vim,
@@ -32,13 +31,6 @@ var editors = {
   emacs: {
   }
 }
-
-var payScales = {
-  level10: {
-    type: 'salary',
-    rate: 'lots'
-  }
-};
 
 var positions = {
   developer: {

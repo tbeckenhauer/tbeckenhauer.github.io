@@ -12,16 +12,16 @@ For starters, I use Duolingo, this is my primary means of learning new words.  I
 
 Second I attempt to move as many activities to Spanish as possible.
 
-. Watch the news in Spanish, with subtitles on.
+* Watch the news in Spanish, with subtitles on.
 
-. Change my phone language settings to Spanish.  Side note on this.  My phone is an Android, after I changed my phone to Spanish, all my installs of Chrome seem to have picked up Spanish as my preferred language.
+* Change my phone language settings to Spanish.  Side note on this.  My phone is an Android, after I changed my phone to Spanish, all my installs of Chrome seem to have picked up Spanish as my preferred language.
 
-. Watch programing videos in Spanish with subtitles on.
+* Watch programing videos in Spanish with subtitles on.
 
-. I attend Catholic mass in Spanish.
+* I attend Catholic mass in Spanish.
 
-. Attend the local Spanish speakers meetup group.
+* Attend the local Spanish speakers meetup group.
 
-. If I need to email co-workers that speak Spanish, I take the time to write it out in Spanish, go back and forth with it in Google translate, and end up having a copy in English and Spanish.
+* If I need to email co-workers that speak Spanish, I take the time to write it out in Spanish, go back and forth with it in Google translate, and end up having a copy in English and Spanish.
 
-I feel the language starting to click, but it's still not there.  Why not write this post in Spanish.  Well I should, but I should also get some rest, so I think that is it for today.  Maybe the next one.
+I feel the language starting to click, but it's still not there.  Why not write this post in Spanish?  Well I should, but I should also get some rest, so I think that is it for today.  Maybe the next one.

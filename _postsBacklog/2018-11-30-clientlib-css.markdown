@@ -4,13 +4,13 @@ title:  "AEM Clientlib Basics"
 date:   2018-11-29 00:00:00
 categories: frontendDevelopment contentManagementSystem adobeExperienceManager aem clientlibs
 ---
-I am learning AEM, and I am very new to the system.  I think this post will illustrate that, and possibly help other newbies.
+I am learning AEM, and I am new to the system.  I think this post will illustrate that, and possibly help other newbies.
 
-When making a component, if you want to create js or css files that go along with that component you will need to use the client lib system.  I am going to go over the steps to set this up and one of the gotchas that got me.
+When making an AEM component, if you want to create js or css files that go along with that component you will need to use the client lib system.  I am going to go over the steps to set this up and one of the gotchas that got me.
 
-First lets make our clientlib directory.  
+First let's make our clientlib directory.  
 {% highlight bash %}
-mmkdir navigation/clientlibs
+mkdir navigation/clientlibs
 {% endhighlight %}
 
 Ok, great.  Next we need to create the .content.xml.  This is a AEM/[JCR](https://en.wikipedia.org/wiki/Content_repository_API_for_Java) thing.  you will find your source code littered with these .content.xml files.  On one level they feel like a mess, because they are everywhere.  On another level, they feel like a simple way to annotate folders with information.  I would suggest getting used to reading them.  They are not too bad.

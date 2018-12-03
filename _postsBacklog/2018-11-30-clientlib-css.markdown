@@ -4,6 +4,15 @@ title:  "AEM Clientlib Basics"
 date:   2018-11-29 00:00:00
 categories: frontendDevelopment contentManagementSystem adobeExperienceManager aem clientlibs
 ---
+- Creating First ClientLib
+- Embed and Dependencies
+- Creating Page Component
+- Transitive Addition
+- Multiple Client libs with same categories
+- ClientLibs in Apps Folder
+- Dumb libs Console (Client Library)
+- Minification
+
 I am learning AEM, and I am new to the system.  I think this post will illustrate that, and possibly help other newbies.
 
 When making an AEM component, if you want to create js or css files that go along with that component you will need to use the client lib system.  I am going to go over the steps to set this up and one of the gotchas that got me.

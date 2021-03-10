@@ -18,4 +18,4 @@ google_analytics: UA-13166428-6
 markdown: kramdown
 exclude: [vendor]
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal

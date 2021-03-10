@@ -60,3 +60,12 @@ function comsumeUserInputBad(fieldOne, fieldTwo) {
 }
 
 {% endhighlight %}
+
+I don't have to tell you an empty array or empty object would slip through the checks in the second function. [Which could lead to some fun math.](https://github.com/denysdovhan/wtfjs#funny-math)
+
+{% highlight javascript %}
+> {} + []
+> 0
+{% endhighlight %}
+
+I hope I have sufficiently proved in most cases if you need to validate some input there is a good chance you should be using positive test cases.  If you have any exceptions that prove the rule, I would be interested to see them.

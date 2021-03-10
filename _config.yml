@@ -17,3 +17,5 @@ google_analytics: UA-13166428-6
 # Build settings
 markdown: kramdown
 exclude: [vendor]
+
+theme: jekyll-theme-slate

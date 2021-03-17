@@ -11,7 +11,7 @@ Here I would like to argue for a style of code I have come to like. There are a 
 3. [Null object pattern](https://en.wikipedia.org/wiki/Null_object_pattern#JavaScript)
 4. Dynamic Dispatch
 
-Now it's not that 3 and 4 are 1 and 2, but rather it because I find Null Object's to be sane defaults, and Dynamic Dispatch to be a way to write your code so that it's always true.  I'll leave discussion of Null object's and Dynamic dispatch for another time.
+Now it's not that 3 and 4 are 1 and 2, but rather it is because I find Null Object's to be sane defaults, and Dynamic Dispatch to be a way to write your code so that it's always true.  I'll leave discussion of Null object's and Dynamic dispatch for another time.
 
 A recent issue that came up put this at the forefront of my mind. It involved updating a pie chart. Now this pie chart could have many states, but two basic ones, we will throw in a third for good measure.
 1. Loading

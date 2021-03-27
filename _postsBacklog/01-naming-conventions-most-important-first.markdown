@@ -50,3 +50,6 @@ I can't quite explain why this works, but I have two things to back up my claim.
     - tempsDB.atLocation("Eiffel tower").atTime("Midnight")
     - We are definitely stretching the definition of name to encompass that. But I don't think it's a stretch to say that we required a very long identifier to specify a piece of data we were looking for that had a wide scope.
     - it's also easy to imagine I config file that would be consumed by an application that would require long names to specify different pieces of data the application would consume.
+
+
+

@@ -2,7 +2,7 @@
 layout: post
 title:  "Copy And Pasting AEM Components"
 date:   2018-11-19 00:00:00
-categories: jekyll update
+categories: Programing, CodingStyle
 ---
 I am learning AEM, and I am very new to the system.  I think this post will illustrate that, and possibly help other newbies.
 

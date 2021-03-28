@@ -2,7 +2,7 @@
 layout: post
 title:  "Prototypes and Components to the Rescue"
 date:   2016-05-16 00:00:00
-categories: jekyll update
+categories: Programing, CodingStyle
 ---
 I want to talk about how you can simplify the problem of building out mocks for your application.  I am not sure if this is obvious, but I would like to share this.
 

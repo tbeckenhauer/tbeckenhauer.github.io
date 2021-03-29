@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Naming Conventions"
-date:   2021-03-27 00:00:00
-categories: Programing, CodingStyle, NamingConventions
+tags: [Programing, CodingStyle, NamingConventions, ItDepends]
+permalink: /naming-conventions/
 ---
 
 They say there are two hard problems in computer science: Caching, Naming things, and off by one errors.

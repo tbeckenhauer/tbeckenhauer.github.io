@@ -6,7 +6,11 @@ permalink: /most-important-things-first/
 ---
 
 This is going to be a short post since I will leave further in detail discussion on the specifics to the posts on the specific recommendations
-To me this is an important life principal, but we will focus just on the development process.
+To me this is an important life principal, but I have also found it to be a good strategy for improving code readability.
+
+I think this first started to dawn on me when a co-worker was asking me to prioritized
+
+Given the choice to order thing
 
 1. [Ordering of words in a function/variable name.](/naming-conventions/)
 2. [Ordering of declaration/calling of functions in a class definition.](/ordering-the-functions-in-your-class/)

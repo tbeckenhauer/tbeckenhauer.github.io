@@ -115,7 +115,13 @@ public void onBindViewHolder(@NonNull SiteItemViewHolder holder, int position) {
 }
 {% endhighlight %}
 
+## Early Returns are a good place to throw exceptions.
+See the "[Throw Early Catch Late](https://howtodoinjava.com/best-practices/java-exception-handling-best-practices/)" principle.
+This is pretty solid.  Since you are probably using early returns to validate input (backend or frontend), throwing an exception in an early return is the soonest you can throw it.
+
+
 Sources:
-1. https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html
-2. https://softwareengineering.stackexchange.com/q/18454/36411
-3. https://cis.temple.edu/~ingargio/cis71/software/roberts/documents/loopexit.txt
+1. https://cleancoders.com
+2. https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html
+3. https://softwareengineering.stackexchange.com/q/18454/36411
+4. https://cis.temple.edu/~ingargio/cis71/software/roberts/documents/loopexit.txt

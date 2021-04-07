@@ -35,6 +35,10 @@ Ok, you should have a pretty good idea for what is going on here, without the ne
 In the 'original' version the top of the class is littered with functions like `handleSubmit()`, `handleEdit()`, and `handleKeyDown()`.  While I agree even [The Small Stuff](https://web.archive.org/web/20210206042814/http://thecodelesscode.com/case/1) is important, some things are more important.  Easily the most important function, and the one that would give a developer reading this class for the first time the best overview for what is going on, would be `render()`.  By reading `render()` and only render you should have a good idea of what's going on in your class.  When you are writing code, please try to put the most important things first. Don't drag me down in the details right away.
 
 <!--
+1. [Another example of moving helper functions down[(https://github.com/vuejs/vue-next/pull/3538)
+
+
+
 (https://github.com/tbeckenhauer/todomvc/compare/master...tbeckenhauer:codeSamples-OrderingTheFunctionsInYourClass?diff=split).
 I find many programmers not doing this, and I don't blame them. Many times languages don't support it.  Thankfully, Javascript does allow one way to do this.
 

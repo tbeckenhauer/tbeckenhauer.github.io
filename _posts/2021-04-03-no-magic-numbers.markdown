@@ -6,9 +6,9 @@ permalink: /no-magic-numbers/
 ---
 
 
-A common problem that I see is the use of magic variables.  Many developers already know what these are, but all do not.
+A common problem that I see is the use of magic variables.  Many developers already know what these are, but all do not. The concept is pretty simple and just about everyone agrees on it(I think). I've never heard any dissent.  
 
-The concept is pretty simple and just about everyone agrees on it(I think). I've never heard any dissent.  The idea is that you shouldn't inline strings or numbers.  Now with strings, it may depend on the string, but we aren't going to worry about that here.  Let's take a look at a good example I have found in the wild(in the Vue 3 source code), and what it would look like without.
+The idea is that you shouldn't inline strings or numbers.  Now with strings, it may depend on the string, but we aren't going to worry about that here.  Let's take a look at a good example I have found in the wild(in the Vue 3 source code), and what it would look like without.
 
 [Vue JS 3 not using magic numbers.]( https://github.com/tbeckenhauer/vue-next/blob/master/packages/runtime-core/src/hydration.ts#L28 )
 

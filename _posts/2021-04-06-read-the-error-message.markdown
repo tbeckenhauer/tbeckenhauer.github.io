@@ -7,7 +7,7 @@ permalink: /read-the-error-message/
  
 See: [Learn to Read the Source, Luke](https://blog.codinghorror.com/learn-to-read-the-source-luke/)
  
-I just want to throw this out there because this tripped me up recently.  So maybe if I write A blag post, I won't do it again.
+I just want to throw this out there because this tripped me up recently.  So maybe if I write a blag post, I won't do it again.
  
 So, right now I am in between teams, about to leave one, and getting on-boarded with a new one, and my time is a little crunched.  There is an important issue I need to finish up to leave my last team in a good state, so I needed to get it done soon before I don't have any more time to do it. 
  

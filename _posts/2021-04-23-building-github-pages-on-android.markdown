@@ -17,10 +17,9 @@ categories: Programing, Project, Android, GithubPages
 
 5. apt update
 6. apt upgrade
-7. apt-get install git ruby-dev
+7. apt install git ruby-dev make gcc gpp build-essential zlib1g zlib1g-dev
 8. git clone https://github.com/tbeckenhauer/tbeckenhauer.github.io.git
-9. apt install make gcc gpp build-essential zlib1g zlib1g-dev
-10. cd tbeckenhauer.github.io
-11. gem install bundler
-12. bundler install
-13. bundle exec jekyll serve
+9. cd tbeckenhauer.github.io
+10. gem install bundler
+11. bundler install
+12. bundle exec jekyll serve

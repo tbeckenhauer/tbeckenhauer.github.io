@@ -8,9 +8,12 @@ categories: Programing, Project, Android, GithubPages
 1. Install Termux
 2. Install Andronix
 3. Install Ubuntu
+
+	`pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu20/ubuntu20.sh | bash`
+
 4. Start Ubuntu
 
-sudo isn't necessary
+	sudo isn't necessary
 
 5. apt update
 6. apt upgrade

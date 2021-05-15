@@ -10,7 +10,7 @@ A common problem that I see is the use of magic variables.  Many developers alre
 
 The idea is that you shouldn't inline strings or numbers.  Now with strings, it may depend on the string, but we aren't going to worry about that here.  Let's take a look at a good example I have found in the wild(in the Vue 3 source code), and what it would look like without.
 
-[Vue JS 3 not using magic numbers.]( https://github.com/tbeckenhauer/vue-next/blob/master/packages/runtime-core/src/hydration.ts#L28 )
+[Vue JS 3 not using magic numbers.]( https://github.com/tbeckenhauer/vue-next/blob/9036f88d8304a3455265f1ecd86ec8f4a5ea4715/packages/runtime-core/src/hydration.ts#L28 )
 
 See the example inline below.  The point isn't for the enum declaration. The point is to make the isComment function declaration more readable. When reading the main logic of `isComment` you can read `node.nodeType === DOMNodeTypes.COMMENT`; as opposed to the alternative if the magic number had been inlined, `node.nodeType === 8`
 

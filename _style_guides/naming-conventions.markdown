@@ -144,7 +144,7 @@ Think a public database, or maybe color names.
 
 ### Reflection
 
-Did you make it this far?  I will agree that some of the later examples got rougher, so I do not want to push this a gospel.  Just something to consider while you are writing your code.  Something that I reflected on as I was writing this is maybe this is a rule of thumb on when it is ok to abbreviate your names.  Ok, that kind of works.  If you are making a library like lodash or jquery, or another very commonly used function inside your own codebase; shortening that function name might be a good idea; and if you are where a variable is only going to live for 4 lines because you just pulled it from somewhere and are moving it somewhere else, then it might be ok to shorten that variable name.
+Did you make it this far?  I will agree that some of the later examples got rougher, so I do not want to push this as gospel.  Just something to consider while you are writing your code.  Something that I reflected on as I was writing this is maybe this is a rule of thumb on when it is ok to abbreviate your names.  Ok, that kind of works.  If you are making a library like lodash or jquery, or another very commonly used function inside your own codebase; shortening that function name might be a good idea; and if you are where a variable is only going to live for 4 lines because you just pulled it from somewhere and are moving it somewhere else, then it might be ok to shorten that variable name.
 
 <!--
 ## Don't camel/kebab/snake case compound words

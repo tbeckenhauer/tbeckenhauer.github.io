@@ -3,6 +3,7 @@ layout: post
 title:  "Using Sane Defaults"
 date:   2021-03-16 00:00:00
 categories: Programing, CodingStyle, ChooseWhereYourComplexityIs
+section: 1
 ---
 
 Here I would like to argue for a style of code I have come to like. There are a few phrases I associate with it.

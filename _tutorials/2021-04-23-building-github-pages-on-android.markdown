@@ -2,7 +2,6 @@
 layout: post
 title:  "Building GitHub Pages on Android"
 date:   2021-04-23 00:00:00
-permalink: /building-github-pages-on-android/
 ---
 
 1. Install Termux

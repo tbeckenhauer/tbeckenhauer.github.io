@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Validating Inputs"
+title:  "When Validating Inputs"
 date:   2021-03-09 00:00:00
 categories: Programing, CodingStyle, ItDepends
-permalink: /when-validating-input/
+section: 200
 ---
 
 [comment]: <> (Note: This is post is part of a pair with [Returning Early]&#40;/returning-early/&#41;)

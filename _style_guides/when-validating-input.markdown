@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "When Validating Inputs"
+title:  "Structuring: When Validating Inputs"
 date:   2021-03-09 00:00:00
 categories: Programing, CodingStyle, ItDepends
 section: 200

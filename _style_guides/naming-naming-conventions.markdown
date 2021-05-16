@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Naming Conventions"
+title:  "Naming: Naming Conventions"
 tags: [Programing, CodingStyle, NamingConventions, ItDepends]
 permalink: /naming-conventions/
 ---

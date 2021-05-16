@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ordering the functions in your class"
+title:  "Structuring: Ordering the functions in your class"
 tags: [Programing, CodingStyle, MoreOftenThanNot]
 permalink: /ordering-the-functions-in-your-class/
 ---

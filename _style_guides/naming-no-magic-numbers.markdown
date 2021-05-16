@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "No Magic Numbers"
+title:  "Naming: No Magic Numbers"
 tags: [Programing, CodingStyle, Always]
 permalink: /no-magic-numbers/
 ---
-
 
 A common problem that I see is the use of magic variables.  Many developers already know what these are, but all do not. The concept is pretty simple and just about everyone agrees on it(I think). I've never heard any dissent.  
 

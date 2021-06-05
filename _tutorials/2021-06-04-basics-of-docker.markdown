@@ -7,7 +7,7 @@ permalink: /basics-of-docker/
 
 I am brand new to docker, so I though I might start documenting docker from the perspective of a beginner.  I will come back and correct any bad info as necessary.
 
-1. Docker data structures are similar to git.  If you understand the git blockchain (I guess it's a blockchain), then you would understand the docker data structure.
+1. Docker data structures are similar to git.  If you understand the git ([Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree)), then you would understand the docker data structure.
 
 2. Assuming you want to start a docker image, you are gonna need a command like this. The 'i' stands for interactive. 't' stands for tty.
 

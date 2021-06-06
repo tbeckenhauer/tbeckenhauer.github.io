@@ -9,7 +9,7 @@
 title: Musings on writing.great.soft-wa.re
 email: thomas.beckenhauer.developer@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://soft-wa.re" # the base hostname & protocol for your site
 github_username:  tbeckenhauer
 google_analytics: UA-13166428-6
@@ -26,4 +26,4 @@ collections:
 markdown: kramdown
 exclude: [vendor]
 
-theme: jekyll-theme-minimal
+theme: jekyll-theme-hacker

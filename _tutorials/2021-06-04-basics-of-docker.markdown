@@ -29,3 +29,36 @@ apt update; apt install -y xauth; xauth add $XAUTH_COOKIE;
 #Test it. Make sure you don't have pinta on your host machine running otherwise X seems to get confused and create a new window for your host install of pinta.
 apt install -y pinta; pinta
 ```
+
+4. Sharing data with the host
+
+
+docker run -v ~/dockerworkspace:/workspace ubuntu
+
+```bash
+
+docker run -it --user $(id -u):$(id -g) -v ~/hostdir:/containerdirectory -v /etc/passwd:/etc/passwd -v /etc/group:/etc/group ubuntu
+```
+
+```
+docker run -it -v ~/hostdir:/containerdirectory -v /etc/passwd:/etc/passwd -v /etc/group:/etc/group -v /etc/shadow:/etc/shadow ubuntu
+```
+
+```
+USERARGS="-v /etc/passwd:/etc/passwd -v /etc/group:/etc/group -v /etc/shadow:/etc/shadow"
+userargs=( $USERARGS )
+docker run -it -v ~/hostdir:/containerdirectory "${userargs[@]}" ubuntu
+```
+
+
+https://stackoverflow.com/q/27925006
+
+
+While researching a solution to this problem, I have found the following article to be a great resource: https://medium.com/@mccode/understanding-how-uid-and-gid-work-in-docker-containers-c37a01d01cf
+
+In my scripts, the solution boiled down to the following :
+
+docker run --user $(id -u):$(id -g) -v /hostdirectory:/containerdirectory -v /etc/passwd:/etc/passwd myimage
+
+Of course, id -u can be replaced by other means of retrieving a user's gid, such as stat -c "%u" /somepath
+

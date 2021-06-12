@@ -1,5 +1,7 @@
 _site
 Gemfile.lock
+
+**.wav
 .sass-cache
 .jekyll-metadata
 vendor

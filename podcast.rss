@@ -1,0 +1,44 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+    <channel>
+        <title>{{ site.title | xml_escape }}</title>
+        <link>{{ site.url }}{{ site.baseurl }}</link>
+        <language>en-us</language>
+        <!--
+            <itunes:subtitle>Subtitle of podcast</itunes:subtitle>
+            <itunes:author>Author Name</itunes:author>
+            <itunes:summary>Description of podcast.</itunes:summary> -->
+        <description>{{ site.description | xml_escape }}</description>
+        <!--
+	    <itunes:owner>
+            <itunes:name>Owner Name</itunes:name>
+            <itunes:email>me@example.com</itunes:email>
+            </itunes:owner>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:image href="http://www.example.com/podcast-icon.jpg" />
+            <itunes:category text="Category Name"/></itunes:category>-->
+        {% for post in site.static_files  %}
+	{% if post.extname == ".mp3" %}
+        <item>
+            <title>{{ post.title | xml_escape }}</title>
+            <!--
+                <itunes:summary>Description of podcast episode content</itunes:summary> -->
+            <description>{{ post.content | xml_escape }}</description>
+            <link>{{ site.url }}{{ post.path }}?raw=true</link>
+            <enclosure url="{{ site.url }}{{ post.path }}?raw=true" type="audio/mpeg" length="1024"></enclosure>
+            <pubDate>
+                {{ post.modified_time }}
+            </pubDate>
+            <!--
+                <itunes:author>Author Name</itunes:author>
+                <itunes:duration>00:32:16</itunes:duration>
+                <itunes:explicit>no</itunes:explicit> -->
+            <guid>{{ site.url}}{{ post.path }}</guid>
+        </item>
+        {% endif %}
+	{% endfor %}
+    </channel>
+</rss>

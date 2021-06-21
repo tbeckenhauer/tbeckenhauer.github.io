@@ -7,13 +7,38 @@ permalink: /Casing-conventions/
 
 ### Things to consider
 
-Let's start with the novel, and heretical things first.
+#### Alignment between the casing conventions in the module
+My rule of thumb is: Align you casing with the rest of the named variables/functions in the module.
+
+Let's say you have some module that is processing user input.  Your module will recive possibly anything and it's should be attempting to get a date.
+```javascript
+function getUserinputAsDate (userinputString) { /**/ }
+```
+See: [Naming: Naming Conventions](/naming-conventions) for info about why userinput needs to come first. 
+Now suppose 
+- for some good reason we aren't giving the user a good ui for entering dates.
+- your function can handle a few different date inputs and will normalize them, and finally return them in an object format.
+- normalize can accept mm/dd/yy, mm/dd/yyyy, and yyyy/mm/dd and format as YYYY-MM-DDTHH:MM:SS.sssZ
+```javascript
+function getUserinputAsDate (userinputString) {
+	userinputString = userinputString || "1970/01/01";
+	userinputDateString = normalize(userinputString);
+	userinputDateObject = convertToObject(userinputDateString);
+}
+```
+
+Ok this is a bit of a contrived example, but I do frequently come across functions that have this setup.  The consistent casing on all the variables starting with userinput makes it 
+- easier to scan. 
+- easier to understand.
+- easier to write regex for.
 
 #### Compound and Prefixed words should be considered one word (strong probability)
 - I would rather see StylePreprocessor than StylePreProcessor.
 - I would rather see ConfigFilename than ConfigFileName.
 
-My rule of thumb here is if I would ever want to mechanically split the words. In the case of ConfigFilename, no I think the chances of me wanting to have a script iterate over a list of words blindly splitting on capital letters, or any of the below casing conventions I am going to be annoyed if I see words like Pre & Processor or File & Name.
+- My rule of thumb here is: if I could ever want to programaticly split the letters into words, then I should consider capitalizing the letter. 
+
+In the case of ConfigFilename: I think the chances of me wanting to have a script iterate over a list of words blindly splitting on capital letters, or any of the below casing conventions I am going to be annoyed if I see words like Pre & Processor or File & Name.
 
 #### Mixing casing conventions could have value.
 I once told a co-worker this to much of their scorn, but look how well [BEM](http://getbem.com/naming/) took off.  It will always be a hack though.  Generally I find if I want to mix casing conventions, it's because I am fitting multiple types or sources of data into just one field.  Here is an example.

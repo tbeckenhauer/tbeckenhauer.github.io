@@ -22,37 +22,47 @@ Let's talk about naming things. I don't think it has to be that hard.  I have a 
 ## Most important words first.
 This is a specific use case of my more general principle "most important thing first".
 
-So frequently I will see developers write variables as they may speak them, and yes I do think that is good sometimes, the problem though is English grammar isn't the best.  I like Spanish grammar better.  In case you don't know in Spanish you generally place the noun before the adjective, and verbs before adverbs.  Everyone agrees this makes sense.  The reason it makes sense is because it puts the most important words first.
+Frequently I will see developers write variables as they may speak them, and yes I do think that is good sometimes, the problem though is English grammar isn't the best.  I like Spanish grammar better.  In case you don't know in Spanish you generally place the noun before the adjective, and verbs before adverbs.  Everyone agrees this makes sense.  The reason it makes sense is because it puts the most important words first.
 
-I would say consider this when choosing variable names.  One of the reasons why I like this is because it can make your code more scannable.  Let's take a look at an example.  Many moons ago, working on an application, we needed some colors.  Thus _colors.scss was born.
+Consider this when choosing variable names.  I like this because it can make your code more readable.  Let's take a look at an example. Let's take a look a few conventions I have seen in different versions of colors.scss and see which is easiest to read.
 
-
+Always noun first, Always with a modifier following, align the colons.
 {% highlight css %}
 :root {
-  --gray-white-color : #FFFFFF
-  --gray-medium-color: #AAAAAA
-  --gray-black-color : #000000
-  --blue-light-color : #48CAE4
-  --blue-medium-color: #00B4D8
-  --blue-dark-color  : #023E8A
+  --gray-white : #FFFFFF
+  --gray-medium: #AAAAAA
+  --gray-black : #000000
+  --blue-light : #48CAE4
+  --blue-medium: #00B4D8
+  --blue-dark  : #023E8A
 }
 {% endhighlight %}
 
-Lets take a look at an alternative, more common, naming scheme.
-
+Always noun first, Always with a modifier following, Always with a modifier, with pure color exceptions, align the colons.
 {% highlight css %}
 :root {
-  --white-color: #FFFFFF
-  --medium-gray-color: #AAAAAA
-  --black-gray-color: #000000
-  --light-blue-color: #48CAE4
-  --medium-blue-color: #00B4D8
-  --dark-blue-color: #023E8A
+  --white      : #FFFFFF
+  --gray-medium: #AAAAAA
+  --black      : #000000
+  --blue-light : #48CAE4
+  --blue-medium: #00B4D8
+  --blue-dark  : #023E8A
 }
 {% endhighlight %}
 
-Now maybe you don't agree with suffixing the type just yet.  We will talk about that later, but it doesn't help.
+Modifier first, noun following, with pure color exceptions, align the colons.
+{% highlight css %}
+:root {
+  --white      : #FFFFFF
+  --medium-gray: #AAAAAA
+  --black-gray : #000000
+  --light-blue : #48CAE4
+  --medium-blue: #00B4D8
+  --dark-blue  : #023E8A
+}
+{% endhighlight %}
 
+Modifier first, noun following, with pure color exceptions, don't align the colons.
 {% highlight css %}
 :root {
   --white: #FFFFFF
@@ -64,10 +74,17 @@ Now maybe you don't agree with suffixing the type just yet.  We will talk about 
 }
 {% endhighlight %}
 
-One of these is clearly easier on the eyes.  It should be clear that when you put the most important word first, the characters automatically align themselves, making it easier for your eyes to scan a block of text.  Next time try pushing your nouns to the front of your variables, and your verbs to the front of your functions.  Then suffix with your adjectives and your adverbs.
+This is subjective, but for me, in most cases, I think 2 is best.  
+  - I think it's easier on the eyes,
+  - If you wanted it to be sorted alphabetically and come out pretty close to something meaningful, 1 would be slightly better than 2, but both would still be pretty good.
+
+I think it should be clear that when you put the most important word first, the characters automatically align themselves, making it easier for your eyes to scan a block of text, and even whole blocks of text could be sorted alphabetically and come out pretty good.
+
+
+Next time try pushing your nouns to the front of your variables, and your verbs to the front of your functions.  Then suffix with your adjectives and your adverbs.
 
 <!--
-First of all, pretend your speaking Spanish. In Spanish
+First of all, pretend you're speaking Spanish. In Spanish
 
 Most important word first.
 
@@ -75,8 +92,8 @@ Consider how things might get sorted in a file explorer.
 
 All of these are basically the same idea.
 
-Choose the most imporant words first, and what you would like to be ordered together first.
-Use spanish as a guide nounAdjative rather than adjativeNoun
+Choose the most important words first, and what you would like to be ordered together first.
+Use Spanish as a guide nounAdjative rather than adjativeNoun
 -->
 
 ## Consider the scoping.

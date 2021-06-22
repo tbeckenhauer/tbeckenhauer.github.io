@@ -18,6 +18,8 @@ include: [ "_tutorials" ]
 collections:
   tutorials:
     output: true
+  patterns:
+    output: true
   style_guides:
     output: true
 

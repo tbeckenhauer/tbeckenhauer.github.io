@@ -4,8 +4,6 @@ layout: default
 
 <div class="home">
 
-  <!--<h1 class="">Posts</h1>-->
-
   <h2>Style Guides</h2>
   <ul class="post-list">
     {% for style_guide in site.style_guides %}
@@ -20,11 +18,11 @@ layout: default
 
   <h2>General Advice</h2>
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for ga in site.generaladvice %}
       <li>
         <h3>
           <a  class="post-link" 
-              href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              href="{{ ga.url | prepend: ga.baseurl }}">{{ ga.title }}</a>
         </h3>
       </li>
     {% endfor %}

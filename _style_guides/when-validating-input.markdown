@@ -4,6 +4,7 @@ title:  "Structuring: When Validating Inputs"
 date:   2021-03-09 00:00:00
 categories: Programing, CodingStyle, ItDepends
 section: 200
+permalink: /when-validating-inputs/
 ---
 
 [comment]: <> (Note: This is post is part of a pair with [Returning Early]&#40;/returning-early/&#41;)

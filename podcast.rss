@@ -21,8 +21,8 @@ layout: null
             <itunes:image href="http://www.example.com/podcast-icon.jpg" />
             <itunes:category text="Category Name"/></itunes:category>-->
             {% for coll in site.collections %}
-            {% for file in coll.files %}
-            {% if file.extname == ".mp3" %}
+            {% for post in coll.files %}
+            {% if post.extname == ".mp3" %}
             <item>
                 <title>{{ post.title | xml_escape }}</title>
                 <!--

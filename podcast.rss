@@ -28,8 +28,8 @@ layout: null
                 <!--
                     <itunes:summary>Description of podcast episode content</itunes:summary> -->
                 <description>{{ post.content | xml_escape }}</description>
-                <link>{{ site.url }}{{ post.path }}?raw=true</link>
-                <enclosure url="{{ site.url }}{{ post.path }}?raw=true" type="audio/mpeg"></enclosure>
+                <link>{{ site.url }}/{{ post.path }}?raw=true</link>
+                <enclosure url="{{ site.url }}/{{ post.path }}?raw=true" type="audio/mpeg"></enclosure>
                 <pubDate>
                     {{ post.modified_time }}
                 </pubDate>
@@ -37,7 +37,7 @@ layout: null
                     <itunes:author>Author Name</itunes:author>
                     <itunes:duration>00:32:16</itunes:duration>
                     <itunes:explicit>no</itunes:explicit> -->
-                <guid>{{ site.url}}{{ post.path }}</guid>
+                <guid>{{ site.url}}/{{ post.path }}</guid>
             </item>
             {% endif %}
             {% endfor %}

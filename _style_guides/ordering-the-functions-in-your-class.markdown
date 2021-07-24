@@ -8,6 +8,8 @@ permalink: /ordering-the-functions-in-your-class/
 This recommendation is to help out with the readability.  It's pretty straight forward.  
 
 ## Summary
+There is a phrase for this in journalism, it's: Don't bury the lead. Put the most important thing first.
+
 Order the entry points, or the functions that best summarize your class to the top of your class.  Order the helper functions or functions that carry low level details towards the bottom of the class.  For this example we are going to be looking at a class from todomvc. Let's take a look at a [real-ish example from todomvc](https://github.com/tbeckenhauer/todomvc/blob/master/examples/react/js/todoItem.jsx).
 
 ## Looking at todoItem.jsx without improved ordering.

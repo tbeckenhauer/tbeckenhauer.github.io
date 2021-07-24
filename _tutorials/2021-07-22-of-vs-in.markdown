@@ -9,7 +9,7 @@ permalink: /of-vs-in/
  Just a thing to be careful with.
 
 ## Summary
-If you are using for...in you might need to add in a .hasOwnProperty() check,or you might rather use for...of.
+If you are using for...in you might need to add in a .hasOwnProperty() check, or you might rather use for...of.
 
 ## Details
 Way back in the day all we had was for...in, and it was tricky. It could "[iterate over the enumerable properties of an object, in an arbitrary order](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of#difference_between_for...of_and_for...in)".  Let's unpack that a little bit. 

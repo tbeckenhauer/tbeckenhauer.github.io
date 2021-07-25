@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Code Comments:"
+title:  "Code Comments: When to use them"
 tags: [Programing, CodingStyle, Comments, ItDepends]
 permalink: /Comments/
 ---

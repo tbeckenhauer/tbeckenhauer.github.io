@@ -6,11 +6,10 @@ permalink: /Casing-conventions/
 ---
 
 ### Things to consider
-
 #### Alignment between the casing conventions in the module
 My rule of thumb is: Align you casing with the rest of the named variables/functions in the module.
 
-Let's say you have some module that is processing user input.  Your module will recive possibly anything and it's should be attempting to get a date.
+Let's say you have some module that is processing user input.  Your module will receive possibly anything and it's should be attempting to get a date.
 ```javascript
 function getUserinputAsDate (userinputString) { /**/ }
 ```
@@ -36,7 +35,7 @@ Ok this is a bit of a contrived example, but I do frequently come across functio
 - I would rather see StylePreprocessor than StylePreProcessor.
 - I would rather see ConfigFilename than ConfigFileName.
 
-- My rule of thumb here is: if I could ever want to programaticly split the letters into words, then I should consider capitalizing the letter. 
+- My rule of thumb here is: if I could ever want to programmatically split the letters into words, then I should consider capitalizing the letter. 
 
 In the case of ConfigFilename: I think the chances of me wanting to have a script iterate over a list of words blindly splitting on capital letters, or any of the below casing conventions I am going to be annoyed if I see words like Pre & Processor or File & Name.
 
@@ -59,7 +58,7 @@ It seems to me, the question is if you ever want to mechanically separate the wo
         - VFAT, FAT32 which is basically always used with long filename support, NTFS, HFS Plus, APFS 
       - Non-case-preserving 
         - FAT12, FAT16 only when without long filename support. 
-  - Is your programming language case insentive?
+  - Is your programming language case insensitive?
     - ABAP
     - Ada
     - BASIC (most of them)
@@ -81,7 +80,7 @@ It seems to me, the question is if you ever want to mechanically separate the wo
   - MY_VARIABLE
 
 ##### Sources
- - https://chaseadams.io/posts/most-common-programming-case-types/
- - https://study.com/academy/lesson/case-insensitive-programming-languages.html
- - https://en.wikipedia.org/wiki/Case_sensitivity#In_programming_languages
- - https://en.wikipedia.org/wiki/Case_preservation
+ - [Chaseadams.io: Most Common Programming Case Types](https://chaseadams.io/posts/most-common-programming-case-types/)
+ - [Study.com: Case Insensitive Programming Languages](https://study.com/academy/lesson/case-insensitive-programming-languages.html)
+ - [Wikipedia: Case Sensitivity: In programming languages](https://en.wikipedia.org/wiki/Case_sensitivity#In_programming_languages)
+ - [Wikipedia: Case preservation](https://en.wikipedia.org/wiki/Case_preservation)

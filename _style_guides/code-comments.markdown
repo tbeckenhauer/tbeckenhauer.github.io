@@ -74,4 +74,4 @@ Let's take a look at a recent Stackoverflow.Blog post on [Code Comments](https:/
 
 9. Use comments to mark incomplete implementations.
  - I don't like it, but if you are going to leave the implementation incomplete, then yes leave a comment.
- - Also, We are now at the point of accepting the tech debt.  This is a topic for another article.  But in a nutshell, techdebt can be acceptable, if taken seriously.  I think it should be viewed similar to regular debt that may be incurred for a startup, but as the business becomes profitable and mature, debt is reduced to "zero".
+ - Also, We are now at the point of accepting the tech debt.  This is a topic for another article.  But in a nutshell, tech debt can be acceptable, if taken seriously.  I think it should be viewed similar to regular debt that may be incurred for a startup, but as the business becomes profitable and mature, debt is reduced to "zero".

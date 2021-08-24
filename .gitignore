@@ -1,6 +1,7 @@
 _site
 Gemfile.lock
 
+**.mp3
 **.wav
 .sass-cache
 .jekyll-cache

@@ -9,9 +9,10 @@ layout: null
         <language>en-us</language>
         <!--
             <itunes:subtitle>Subtitle of podcast</itunes:subtitle>
-            <itunes:author>Author Name</itunes:author>
         -->
-        <itunes:summary>{{ site.description | xml_escape }}</itunes:summary> 
+        <itunes:subtitle>{{ site.description | xml_escape }}</itunes:subtitle>
+        <itunes:author>Soft-wa.re/Developer</itunes:author>
+        <itunes:summary>An AI Generated Podcast</itunes:summary> 
         <description>   {{ site.description | xml_escape }}</description>
 	    <itunes:owner>
             <itunes:name>Soft-wa.re/Developer</itunes:name>

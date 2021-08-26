@@ -18,25 +18,25 @@ layout: null
             <itunes:email>me@example.com</itunes:email>
             </itunes:owner>
             <itunes:explicit>no</itunes:explicit>
-            <itunes:image href="http://www.example.com/podcast-icon.jpg" />
             <itunes:category text="Category Name"/></itunes:category>-->
+            <itunes:image href="https://soft-wa.re/favicon.ico" />
             {% for coll in site.collections %}
             {% for post in coll.files %}
             {% if post.extname == ".mp3" %}
             <item>
                 <title>{{ post.title | xml_escape }}</title>
-                <!--
-                    <itunes:summary>Description of podcast episode content</itunes:summary> -->
+                <itunes:summary>{{ post.content | xml_escape }}</itunes:summary> 
                 <description>{{ post.content | xml_escape }}</description>
                 <link>{{ site.url }}/{{ post.collection }}/{{ post.name }}?raw=true</link>
                 <enclosure url="{{ site.url }}/{{ post.collection }}/{{ post.name }}?raw=true" type="audio/mpeg"></enclosure>
                 <pubDate>
                     {{ post.modified_time }}
                 </pubDate>
+                <itunes:author>Soft-wa.re Developer</itunes:author>
                 <!--
-                    <itunes:author>Author Name</itunes:author>
                     <itunes:duration>00:32:16</itunes:duration>
-                    <itunes:explicit>no</itunes:explicit> -->
+                -->
+                <itunes:explicit>no</itunes:explicit> 
                 <guid>{{ site.url }}/{{ post.collection }}/{{ post.name }}</guid>
             </item>
             {% endif %}

@@ -20,6 +20,7 @@ layout: null
             </itunes:owner> -->
             <itunes:category text="Technology">Technology</itunes:category>
             <itunes:image href="https://soft-wa.re/favicon.ico"></itunes:image>
+            <itunes:explicit>no</itunes:explicit> 
             {% for coll in site.collections %}
             {% for post in coll.files %}
             {% if post.extname == ".mp3" %}

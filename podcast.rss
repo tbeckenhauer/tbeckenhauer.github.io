@@ -28,7 +28,7 @@ layout: null
                 <title>{{ post.name | replace: "-", " " | remove: ".markdown.mp3" | capitalize }}</title>
                 <itunes:summary>{{ post.content | xml_escape }}</itunes:summary> 
                 <description>{{ post.content | xml_escape }}</description>
-                <link>{{ site.url }}/{{ post.collection }}/{{ post.name }}?raw=true</link>
+                <link>{{ site.url }}/{{ post.collection }}/{{ post.name | remove: ".markdown.mp3" }}</link>
                 <enclosure url="{{ site.url }}/{{ post.collection }}/{{ post.name }}?raw=true" type="audio/mpeg"></enclosure>
                 <pubDate>
                     {{ post.modified_time }}

@@ -17,8 +17,7 @@ layout: null
 	    <itunes:owner>
             <itunes:name>Owner Name</itunes:name>
             <itunes:email>me@example.com</itunes:email>
-            </itunes:owner>
-        -->
+            </itunes:owner> -->
             <itunes:category text="Technology"/></itunes:category>
             <itunes:explicit>no</itunes:explicit>
             <itunes:image href="https://soft-wa.re/favicon.ico" />

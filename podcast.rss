@@ -13,11 +13,10 @@ layout: null
         -->
         <itunes:summary>{{ site.description | xml_escape }}</itunes:summary> 
         <description>   {{ site.description | xml_escape }}</description>
-        <!--
 	    <itunes:owner>
-            <itunes:name>Owner Name</itunes:name>
-            <itunes:email>me@example.com</itunes:email>
-            </itunes:owner> -->
+            <itunes:name>Soft-wa.re/Developer</itunes:name>
+            <itunes:email>gs8f371tjt7i@opayq.com</itunes:email>
+        </itunes:owner> 
             <itunes:category text="Technology">Technology</itunes:category>
             <itunes:image href="https://soft-wa.re/favicon.ico"></itunes:image>
             <itunes:explicit>no</itunes:explicit> 

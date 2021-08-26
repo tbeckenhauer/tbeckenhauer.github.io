@@ -30,3 +30,4 @@ markdown: kramdown
 exclude: [vendor]
 
 theme: jekyll-theme-hacker
+show_downloads: true

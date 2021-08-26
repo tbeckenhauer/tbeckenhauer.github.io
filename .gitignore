@@ -1,6 +1,11 @@
 _site
 Gemfile.lock
 
+**.rsla
+**.rsls
+**.rslsa
+**.rslsc
+
 **.mp3
 **.wav
 .sass-cache

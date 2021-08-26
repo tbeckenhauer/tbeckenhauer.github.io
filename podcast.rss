@@ -25,7 +25,7 @@ layout: null
             {% for post in coll.files %}
             {% if post.extname == ".mp3" %}
             <item>
-                <title>{{ post.name | replace: "-", " " | remove: ".markdown.mp3" }}</title>
+                <title>{{ post.name | replace: "-", " " | remove: ".markdown.mp3" | capitalize }}</title>
                 <itunes:summary>{{ post.content | xml_escape }}</itunes:summary> 
                 <description>{{ post.content | xml_escape }}</description>
                 <link>{{ site.url }}/{{ post.collection }}/{{ post.name }}?raw=true</link>

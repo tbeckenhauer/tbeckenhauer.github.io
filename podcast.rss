@@ -10,15 +10,17 @@ layout: null
         <!--
             <itunes:subtitle>Subtitle of podcast</itunes:subtitle>
             <itunes:author>Author Name</itunes:author>
-            <itunes:summary>Description of podcast.</itunes:summary> -->
-        <description>{{ site.description | xml_escape }}</description>
+        -->
+        <itunes:summary>{{ site.description | xml_escape }}</itunes:summary> 
+        <description>   {{ site.description | xml_escape }}</description>
         <!--
 	    <itunes:owner>
             <itunes:name>Owner Name</itunes:name>
             <itunes:email>me@example.com</itunes:email>
             </itunes:owner>
+        -->
+            <itunes:category text="Technology"/></itunes:category>
             <itunes:explicit>no</itunes:explicit>
-            <itunes:category text="Category Name"/></itunes:category>-->
             <itunes:image href="https://soft-wa.re/favicon.ico" />
             {% for coll in site.collections %}
             {% for post in coll.files %}

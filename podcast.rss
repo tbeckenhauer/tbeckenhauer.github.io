@@ -18,7 +18,7 @@ layout: null
             <itunes:name>Owner Name</itunes:name>
             <itunes:email>me@example.com</itunes:email>
             </itunes:owner> -->
-            <itunes:category text="Technology"/></itunes:category>
+            <itunes:category text="Technology">Technology</itunes:category>
             <itunes:image href="https://soft-wa.re/favicon.ico"></itunes:image>
             {% for coll in site.collections %}
             {% for post in coll.files %}

@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Returning Early"
-date:   2021-03-17 00:00:00
+title:  "Structuring: Early Returns(For)"
 categories: Programing, CodingStyle, ItDepends
-permalink: /returning-early/
+permalink: /early-returns-for/
+section: 1
 ---
 
 Note: This is post is part of a pair with [When Validating Input](/when-validating-input/)

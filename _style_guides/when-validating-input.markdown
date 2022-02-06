@@ -11,7 +11,7 @@ permalink: /when-validating-inputs/
 
 Note: Another good and related topic that I won't cover in depth here/yet. Is how when building a codebase/system. You should be validating your input's at the boundary of the system. Don't litter every function you write with checks that variables are of a certain type.  If you want that you need to consider TypeScript or any other typed language. On the backend if you are fetching data from other systems you don't own, you need to be rigorously validating it, On the frontend rigorously validating user input. Everything else in between needs to be rigorously checked via unit testing.
 
-Note: I know it's common for developers to 'return early' from functions or write 'guard clauses'.  I remain unconvinced.  But I do know several programmers that I respect that prefer this. So, maybe I will change my mind later or maybe I will change everyone elses mind.  https://softwareengineering.stackexchange.com/a/18459/36411
+Note: I know it's common for developers to 'return early' from functions or write 'guard clauses'.  I remain unconvinced.  But I do know several programmers that I respect that prefer this. So, maybe I will change my mind later or [maybe I will change everyone elses mind](https://softwareengineering.stackexchange.com/a/18459/36411).
 
 A common issue I see when reviewing code is developers using negative test cases when validating inputs
 
@@ -19,7 +19,7 @@ When validating input, use positive test cases, meaning test that the input/vari
 
 {% highlight javascript %}
 
-function comsumeUserInputGood(fieldOne, fieldTwo) {
+function consumeUserInputGood(fieldOne, fieldTwo) {
   if(_.isNumber(fieldOne) && _.isNumber(fieldTwo)) {
       //execute behavior you want.
       return fieldOne + fieldTwo;
@@ -28,7 +28,7 @@ function comsumeUserInputGood(fieldOne, fieldTwo) {
   }
 }
 
-function comsumeUserInputBad(fieldOne, fieldTwo) {
+function consumeUserInputBad(fieldOne, fieldTwo) {
   if(_.isNull(fieldOne) || _.isNull(fieldTwo)) {
       //Handle the null case. Maybe there is something special you can do here.
   }
@@ -51,14 +51,14 @@ Another scenario that mixes the above but the point remains would be
 
 {% highlight javascript %}
 
-function comsumeUserInputGood(fieldOne, fieldTwo) {
+function consumeUserInputGood(fieldOne, fieldTwo) {
   fieldOne = _.isNumber(fieldOne) ? fieldOne : 0;
   fieldTwo = _.isNumber(fieldTwo) ? fieldTwo : 0;
 
   return fieldOne + fieldTwo;
 }
 
-function comsumeUserInputBad(fieldOne, fieldTwo) {
+function consumeUserInputBad(fieldOne, fieldTwo) {
   fieldOne = fieldOne || 0;
   fieldTwo = fieldTwo || 0;
 

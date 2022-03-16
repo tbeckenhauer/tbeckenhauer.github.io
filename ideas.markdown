@@ -5,7 +5,7 @@ tags: [Ideas]
 permalink: /ideas
 ---
 
-1. url opener application
+1. file based url-bookmark opener application
 2. Service to show you the up or down trend of technologies you are looking at
 3. Email Based Todo List and/or sync filing cabinet with Todo list
 4. Software defined networking blooth router app for you cellphone or cellphones

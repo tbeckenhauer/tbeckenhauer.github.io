@@ -6,7 +6,7 @@ permalink: /ideas
 ---
 
 1. Union focused social network
-2. An app service that keeps you in touch with friends(priority queue)
+2. An app/service that keeps you in touch with friends(priority queue)
 3. A service that connects restaurants that have excess food waste with people that are feeding animals
 4. Email Based Todo List and/or sync filing cabinet with Todo list
 5. Bluetooth router app for your cellphone or cellphones

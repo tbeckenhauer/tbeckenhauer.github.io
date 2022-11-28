@@ -28,7 +28,7 @@ git checkout -b env-public-staging
 git merge feature-make-new-foo-bar
 ```
 
-![useful image]({{ site.url }}/_tutorials/feature-branches-and-environment-branches.1.markdown)
+![useful image]({{ site.url }}/tutorials/feature-branches-and-environment-branches.1.png)
 
 At this point we have the first go round of having both feature branches merged to the environment, but lets say we need more, no problem.
 
@@ -44,7 +44,7 @@ git checkout env-public-staging
 git merge feature-make-new-foo-bar
 ```
 We can also go the other way.
-![useful image]({{ site.url }}/_tutorials/feature-branches-and-environment-branches.2.markdown)
+![useful image]({{ site.url }}/tutorials/feature-branches-and-environment-branches.2.png)
 ```bash
 git checkout feature-build-a-hurr-dur
 git commit -m message
@@ -59,4 +59,4 @@ git merge feature-build-a-hurr-dur
 
 If you follow the history closely the feature branches don't know anything about each other, but the environment can still pull in both feature branches just fine.
 
-![useful image]({{ site.url }}/_tutorials/feature-branches-and-environment-branches.3.markdown)
+![useful image]({{ site.url }}/tutorials/feature-branches-and-environment-branches.3.png)

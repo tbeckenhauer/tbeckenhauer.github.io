@@ -11,7 +11,7 @@ The problem was we had two teams, with two long-running feature branches, both o
 
 Let's say you have two long-running feature branches `feature-make-new-foo-bar`, and `feature-build-a-hurr-durr`. Branch off of either one and make a `env-public-staging`, so that it's known that branch is specifically for that environment, and push merge commits to it pulling in the latest from the feature branches.  This keep the feature work separate and lets the environment get the latest. 
 
-I ran these commands on [git-school](https://git-school.github.io/visualizing-git/#free).
+I ran these commands on [git-school](https://git-school.github.io/visualizing-git/#free).  You'll see a few mistakes in the screenshots, but the commands I have documented here should be good.
 
 ```bash
 git checkout -b develop

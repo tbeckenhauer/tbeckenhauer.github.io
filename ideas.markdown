@@ -12,3 +12,4 @@ permalink: /ideas
 5. Bluetooth router app for your cellphone or cellphones
 6. File based url-bookmark opener application
 7. Service to show you the up or down trend of technologies you are looking at
+8. Fringe takes place in the Stephen King multiverse. 

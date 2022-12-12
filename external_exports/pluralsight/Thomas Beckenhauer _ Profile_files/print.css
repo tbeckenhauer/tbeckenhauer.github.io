@@ -1,0 +1,8 @@
+﻿@media print {
+     #prism-sidenav, #ps-chrome, footer {
+         display: none;
+     }
+    #ps-main {
+        padding: 10px;
+    }
+ }

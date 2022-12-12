@@ -1,0 +1,28 @@
+I"�<p>A common problem that I see is the use of magic variables.  Many developers already know what these are, but all do not. The concept is pretty simple and just about everyone agrees on it(I think). I’ve never heard any dissent.</p>
+
+<p>The idea is that you shouldn’t inline strings or numbers.  Now with strings, it may depend on the string, but we aren’t going to worry about that here.  Let’s take a look at a good example I have found in the wild(in the Vue 3 source code), and what it would look like without.</p>
+
+<p><a href="https://github.com/tbeckenhauer/vue-next/blob/9036f88d8304a3455265f1ecd86ec8f4a5ea4715/packages/runtime-core/src/hydration.ts#L28">Vue JS 3 not using magic numbers.</a></p>
+
+<p>See the example inline below.  The point isn’t for the enum declaration. The point is to make the isComment function declaration more readable. When reading the main logic of <code class="language-plaintext highlighter-rouge">isComment</code> you can read <code class="language-plaintext highlighter-rouge">node.nodeType === DOMNodeTypes.COMMENT</code>; as opposed to the alternative if the magic number had been inlined, <code class="language-plaintext highlighter-rouge">node.nodeType === 8</code></p>
+
+<figure class="highlight"><pre><code class="language-typescript" data-lang="typescript"><span class="kd">const</span> <span class="kr">enum</span> <span class="nx">DOMNodeTypes</span> <span class="p">{</span>
+    <span class="nx">ELEMENT</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nx">TEXT</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="nx">COMMENT</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">hasMismatch</span> <span class="o">=</span> <span class="kc">false</span>
+
+<span class="kd">const</span> <span class="nx">isSVGContainer</span> <span class="o">=</span> <span class="p">(</span><span class="nx">container</span><span class="p">:</span> <span class="nx">Element</span><span class="p">)</span> <span class="o">=&gt;</span>
+    <span class="sr">/svg/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">container</span><span class="p">.</span><span class="nx">namespaceURI</span><span class="o">!</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">container</span><span class="p">.</span><span class="nx">tagName</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">foreignObject</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">isComment</span> <span class="o">=</span> <span class="p">(</span><span class="nx">node</span><span class="p">:</span> <span class="nx">Node</span><span class="p">):</span> <span class="nx">node</span> <span class="k">is</span> <span class="nx">Comment</span> <span class="o">=&gt;</span>
+    <span class="nx">node</span><span class="p">.</span><span class="nx">nodeType</span> <span class="o">===</span> <span class="nx">DOMNodeTypes</span><span class="p">.</span><span class="nx">COMMENT</span></code></pre></figure>
+
+<p>Let’s take a look at what the function would have looked like without. Now because of the short function it is still possible to infer what the 8 means, but it is certainly less obvious what’s going on.</p>
+
+<figure class="highlight"><pre><code class="language-typescript" data-lang="typescript"><span class="kd">const</span> <span class="nx">isComment</span> <span class="o">=</span> <span class="p">(</span><span class="nx">node</span><span class="p">:</span> <span class="nx">Node</span><span class="p">):</span> <span class="nx">node</span> <span class="k">is</span> <span class="nx">Comment</span> <span class="o">=&gt;</span>
+    <span class="nx">node</span><span class="p">.</span><span class="nx">nodeType</span> <span class="o">===</span> <span class="mi">8</span></code></pre></figure>
+
+:ET

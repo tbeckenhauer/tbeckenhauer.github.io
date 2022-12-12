@@ -1,0 +1,45 @@
+I"�<p>This recommendation is to help out with the readability.  It’s pretty straight forward.</p>
+
+<h2 id="summary">Summary</h2>
+<p>Order the entry points, or the functions that best summarize your class to the top of your class.  Order the helper functions or functions that carry low level details towards the bottom of the class.  For this example we are going to be looking at a class from todomvc. Let’s take a look at a <a href="https://github.com/tbeckenhauer/todomvc/blob/master/examples/react/js/todoItem.jsx">real-ish example from todomvc</a>.</p>
+
+<h2 id="looking-at-todoitemjsx-without-improved-ordering">Looking at todoItem.jsx without improved ordering.</h2>
+<p>Let’s see how much we can figure out when we are looking at <a href="https://github.com/tbeckenhauer/todomvc/blob/master/examples/react/js/todoItem.jsx">the version before my updates</a>.  With my updated todoItem.jsx, the render function ended on line 47.  So we are going to look at the best things we can find out when we look above line 47 without my changes.  For the purposes of this exercise, don’t read past line 47. <!-- The purpose of this recommendation is to make your code more readable, and scannable.  --></p>
+
+<ol>
+  <li>The name of this file todoItem.jsx</li>
+  <li>handleSubmit: We trim the text, and set the state with it.</li>
+  <li>handleEdit: On edit, we also set the state.</li>
+  <li>handleKeyDown: We can cancel or submit our changes via the keyboard.</li>
+  <li>getInitialState: React boilerplate code.</li>
+</ol>
+
+<p>Do you know what’s going on here? I don’t. It’s clear we are handling some user interaction, but given the above information there is still plenty of mystery. Given this information I could have guessed wildly wrong about what this class was for.  Let’s turn to the improved ordering.</p>
+
+<h2 id="looking-at-todoitemjsx-with-improved-ordering">Looking at todoItem.jsx with improved ordering.</h2>
+<p>Let’s see what we can find by looking at the name of the file, and the first 47 lines with <a href="https://github.com/tbeckenhauer/todomvc/blob/4ee910f1ff50a4827804e4bdc258094fd2110988/examples/react/js/todoItem.jsx">the improved ordering</a>.</p>
+<ol>
+  <li>The name of this file todoItem.jsx</li>
+  <li>The top level html element is an <code class="language-plaintext highlighter-rouge">&lt;li&gt;...&lt;/li&gt;</code></li>
+  <li>Inside that is a <code class="language-plaintext highlighter-rouge">&lt;input type=checkbox /&gt;</code></li>
+  <li>Following that is a <code class="language-plaintext highlighter-rouge">&lt;input type=text /&gt;</code></li>
+  <li>It looks like there are some other functions called from here that handle… stuff.</li>
+</ol>
+
+<p>Ok, you should have a pretty good idea for what is going on here, without the need for scrolling around trying to figure out what is happening.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>In the ‘original’ version the top of the class is littered with functions like <code class="language-plaintext highlighter-rouge">handleSubmit()</code>, <code class="language-plaintext highlighter-rouge">handleEdit()</code>, and <code class="language-plaintext highlighter-rouge">handleKeyDown()</code>.  While I agree even <a href="https://web.archive.org/web/20210206042814/http://thecodelesscode.com/case/1">The Small Stuff</a> is important, some things are more important.  Easily the most important function, and the one that would give a developer reading this class for the first time the best overview for what is going on, would be <code class="language-plaintext highlighter-rouge">render()</code>.  By reading <code class="language-plaintext highlighter-rouge">render()</code> and only render you should have a good idea of what’s going on in your class.  When you are writing code, please try to put the most important things first. Don’t drag me down in the details right away.</p>
+
+<!--
+1. [Another example of moving helper functions down[(https://github.com/vuejs/vue-next/pull/3538)
+
+
+
+(https://github.com/tbeckenhauer/todomvc/compare/master...tbeckenhauer:codeSamples-OrderingTheFunctionsInYourClass?diff=split).
+I find many programmers not doing this, and I don't blame them. Many times languages don't support it.  Thankfully, Javascript does allow one way to do this.
+
+That is [react/js/todoItem.jsx](https://github.com/tbeckenhauer/todomvc/compare/master...tbeckenhauer:codeSamples-OrderingTheFunctionsInYourClass?diff=split).
+(https://github.com/tbeckenhauer/todomvc/compare/master...tbeckenhauer:codeSamples-OrderingTheFunctionsInYourClass?diff=split). 
+-->
+:ET

@@ -1,0 +1,8 @@
+I"^<p>Here I would like to argue for a style of code I have come to like. There are a few phrases I associate with it.</p>
+<ol>
+  <li>Using sane defaults</li>
+  <li>Write your code so that it is always true.</li>
+  <li><a href="https://en.wikipedia.org/wiki/Null_object_pattern#JavaScript">Null object pattern</a></li>
+  <li>Dynamic Dispatch</li>
+</ol>
+:ET

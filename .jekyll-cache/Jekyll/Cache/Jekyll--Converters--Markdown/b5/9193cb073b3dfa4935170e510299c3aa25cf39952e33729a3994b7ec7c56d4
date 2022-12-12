@@ -1,0 +1,23 @@
+I"þ<ol>
+  <li>Install Termux</li>
+  <li>Install Andronix</li>
+  <li>
+    <p>Install Ubuntu</p>
+
+    <p><code class="language-plaintext highlighter-rouge">pkg update -y &amp;&amp; pkg install curl proot tar -y &amp;&amp; curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Ubuntu20/ubuntu20.sh | bash</code></p>
+  </li>
+  <li>
+    <p>Start Ubuntu</p>
+
+    <p>sudo isnâ€™t necessary</p>
+  </li>
+  <li>apt update</li>
+  <li>apt upgrade</li>
+  <li>apt install git ruby-dev make gcc gpp build-essential zlib1g zlib1g-dev</li>
+  <li>git clone https://github.com/tbeckenhauer/tbeckenhauer.github.io.git</li>
+  <li>cd tbeckenhauer.github.io</li>
+  <li>gem install bundler</li>
+  <li>bundler install</li>
+  <li>bundle exec jekyll serve</li>
+</ol>
+:ET

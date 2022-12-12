@@ -1,0 +1,65 @@
+I"�<p>I want to talk about how you can simplify the problem of building out mocks for your application.  I am not sure if this is obvious, but I would like to share this.</p>
+
+<p>Frequently when you are developing an application you need a way to mock out fake information, for various tasks.  Unit Testing, and Demos(with contrived scenarios) come to mind.  This is especially useful if your application isn’t as straight forward as the one I am suggesting here.</p>
+
+<p>We are using two patterns here the component pattern to build up our mocks, and the prototype pattern to make several of them.</p>
+
+<p>Building a new employee.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">employees</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">tom</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
+    <span class="na">name</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">first</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Thomas</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">last</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Beckenhauer</span><span class="dl">'</span>
+    <span class="p">},</span>
+    <span class="na">locationPath</span><span class="p">:</span> <span class="dl">'</span><span class="s1">downtownBuilding.awesomeProductTeamFloor.windowSeat</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">position</span><span class="p">:</span> <span class="nx">positions</span><span class="p">.</span><span class="nx">developer</span><span class="p">.</span><span class="nx">superStar</span><span class="p">,</span>
+    <span class="na">editor</span><span class="p">:</span> <span class="nx">editors</span><span class="p">.</span><span class="nx">vim</span><span class="p">,</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">editors</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">vim</span><span class="p">:</span> <span class="p">{</span>
+  <span class="p">},</span>
+  <span class="na">emacs</span><span class="p">:</span> <span class="p">{</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">positions</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">developer</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">superStar</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">makeMistakes</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="na">learnFromMistakes</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">locations</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">downtownBuilding</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">awesomeProductTeamFloor</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">windowSeat</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">isNoisy</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+          <span class="na">isChairNice</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">};</span></code></pre></figure>
+
+<p>First lets look at the component pattern, we are going to use this to build up one of our employees.  What makes this the component pattern, is that we have removed (almost)all of our logic/data out of the definition of ‘tom’, and put it into a domain specific place.</p>
+
+<p>Basing a new employee off of an existing employee is relatively easy.  Here I am using lodash to make the new object.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">_</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">lodash</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">employees</span><span class="p">.</span><span class="nx">jane</span> <span class="o">=</span> <span class="nx">_</span><span class="p">.</span><span class="nx">merge</span><span class="p">({},</span> <span class="nx">employees</span><span class="p">.</span><span class="nx">tom</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">id</span><span class="p">:</span> <span class="mi">41</span><span class="p">,</span>
+  <span class="na">name</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">first</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Jane</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">last</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Doe</span><span class="dl">'</span>
+  <span class="p">},</span>
+  <span class="na">editor</span><span class="p">:</span> <span class="nx">editors</span><span class="p">.</span><span class="nx">emacs</span>
+<span class="p">});</span></code></pre></figure>
+
+<p>As you can see building the second mock was significantly easier.  For the most part we wanted to keep everything the same except the id, name, and editor.</p>
+:ET

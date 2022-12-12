@@ -1,0 +1,173 @@
+I"�+<p>They say there are two hard problems in computer science: Caching, Naming things, and off by one errors.</p>
+
+<p>No? Ok.</p>
+
+<p>Let’s talk about naming things. I don’t think it has to be that hard.  I have a few guidelines to keep in mind that go beyond the usual suspects. Let’s run through them real quick.</p>
+
+<ol>
+  <li>Most important words first</li>
+  <li>Consider the scoping</li>
+</ol>
+
+<!--
+3. maybe suffix your variables with the type
+4. Don't camel/kebab/snake case compound words
+-->
+
+<h2 id="most-important-words-first">Most important words first.</h2>
+<p>This is a specific use case of my more general principle “most important thing first”.</p>
+
+<p>So frequently I will see developers write variables as they may speak them, and yes I do think that is good sometimes, the problem though is English grammar isn’t the best.  I like Spanish grammar better.  In case you don’t know in Spanish you generally place the noun before the adjective, and verbs before adverbs.  Everyone agrees this makes sense.  The reason it makes sense is because it puts the most important words first.</p>
+
+<p>I would say consider this when choosing variable names.  One of the reasons why I like this is because it can make your code more scannable.  Let’s take a look at an example.  Many moons ago, working on an application, we needed some colors.  Thus _colors.scss was born.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--gray-white-color</span> <span class="p">:</span> <span class="m">#FFFFFF</span>
+  <span class="n">--gray-medium-color</span><span class="p">:</span> <span class="m">#AAAAAA</span>
+  <span class="n">--gray-black-color</span> <span class="p">:</span> <span class="m">#000000</span>
+  <span class="n">--blue-light-color</span> <span class="p">:</span> <span class="m">#48CAE4</span>
+  <span class="n">--blue-medium-color</span><span class="p">:</span> <span class="m">#00B4D8</span>
+  <span class="n">--blue-dark-color</span>  <span class="p">:</span> <span class="m">#023E8A</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Lets take a look at an alternative, more common, naming scheme.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--white-color</span><span class="p">:</span> <span class="m">#FFFFFF</span>
+  <span class="n">--medium-gray-color</span><span class="p">:</span> <span class="m">#AAAAAA</span>
+  <span class="n">--black-gray-color</span><span class="p">:</span> <span class="m">#000000</span>
+  <span class="n">--light-blue-color</span><span class="p">:</span> <span class="m">#48CAE4</span>
+  <span class="n">--medium-blue-color</span><span class="p">:</span> <span class="m">#00B4D8</span>
+  <span class="n">--dark-blue-color</span><span class="p">:</span> <span class="m">#023E8A</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Now maybe you don’t agree with suffixing the type just yet.  We will talk about that later, but it doesn’t help.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--white</span><span class="p">:</span> <span class="m">#FFFFFF</span>
+  <span class="n">--medium-gray</span><span class="p">:</span> <span class="m">#AAAAAA</span>
+  <span class="n">--black-gray</span><span class="p">:</span> <span class="m">#000000</span>
+  <span class="n">--light-blue</span><span class="p">:</span> <span class="m">#48CAE4</span>
+  <span class="n">--medium-blue</span><span class="p">:</span> <span class="m">#00B4D8</span>
+  <span class="n">--dark-blue</span><span class="p">:</span> <span class="m">#023E8A</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>One of these is clearly easier on the eyes.  It should be clear that when you put the most important word first, the characters automatically align themselves, making it easier for your eyes to scan a block of text.  Next time try pushing your nouns to the front of your variables, and your verbs to the front of your functions.  Then suffix with your adjectives and your adverbs.</p>
+
+<!--
+First of all, pretend your speaking Spanish. In Spanish
+
+Most important word first.
+
+Consider how things might get sorted in a file explorer.
+
+All of these are basically the same idea.
+
+Choose the most imporant words first, and what you would like to be ordered together first.
+Use spanish as a guide nounAdjative rather than adjativeNoun
+-->
+
+<h2 id="consider-the-scoping">Consider the scoping.</h2>
+
+<p>Here is a quick summary.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Wide Scope</th>
+      <th>Narrow Scope</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Function</td>
+      <td>Short Name</td>
+      <td>Long Name</td>
+    </tr>
+    <tr>
+      <td>Variable</td>
+      <td>Long Name</td>
+      <td>Short Name</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<!--
+Got it? If your function has global scope, it probably can use a very succinct name.  If you function has very narrow scope, it's probably doing something super specific, and could use some self documenting name.  If you variable is global
+-->
+
+<p>I can’t quite explain why this works, but I have two things to back up my claim. First, an appeal to an authority.  This is a recommendation from Bob Martin.  You’ll have to watch his videos to see it though, a quick search doesn’t turn anything up.  Second, a few examples.</p>
+
+<h3 id="function---wide-scope">Function - Wide scope</h3>
+<p>Meaning how widely used is it? Consider Lodash and jQuery or maybe some other constructors.</p>
+
+<p>Good Examples:</p>
+<ul>
+  <li>_.map()</li>
+  <li>$(“#appContainer”)</li>
+  <li>new Vue()</li>
+</ul>
+
+<p>Increasingly Bad Examples:</p>
+<ul>
+  <li>Something that is pushing the limit of “short”:
+    <ul>
+      <li>ReactDOM.render(/**/)</li>
+    </ul>
+  </li>
+  <li>How come the jQuery constructor feels much more natural than the native version?
+    <ul>
+      <li>document.querySelectorAll(“#appContainer”)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="function---narrow-scope">Function - Narrow scope</h3>
+<p>functions that have a super specific purpose should speak for themselves.</p>
+<ul>
+  <li><a href="https://www.cs.cmu.edu/afs/cs/academic/class/15668-s11/www/cuda-doc/html/group__CUDART__TEXTURE_g6076c6bf0b1f2e52a36cd51af9d78fb4.html">cudaGetTextureAlignmentOffset</a></li>
+</ul>
+
+<p>I bet you have a decent idea what this function is for.  Now it’s especially good for this example here because it mentions the library name, but that may not be best in practice.  I don’t want cuda eating up 4 characters everytime I call it.  I know we are using cuda! Stop with the branding Nvidia! Keep in mind this isn’t the narrowest scoped function possible, just one of the more narrow ones that can be readily shared.  Let’s say I did get my way though and could trim off the cude from the function name what would we have?</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">    <span class="n">someObject</span><span class="p">.</span><span class="n">getTextureAlignmentOffset</span><span class="p">(</span><span class="n">offset</span><span class="p">,</span> <span class="n">texref</span><span class="p">)</span></code></pre></figure>
+
+<p>Beautiful.</p>
+
+<h2 id="variable---narrow-scope">Variable - Narrow scope</h2>
+<p>Let’s not be tempted to stick with the previous example.  The problem is that function has a wide audience and so do the variables. So shortening them is probably not a good idea.  Let’s make something up.  Let’s convert drivers licenses into applications.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">const</span> <span class="nx">applications</span> <span class="o">=</span> <span class="nx">driversLicenses</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">dL</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span> 
+        <span class="na">id</span><span class="p">:</span> <span class="nx">i</span><span class="p">,</span> 
+        <span class="na">userName</span><span class="p">:</span> <span class="nx">dL</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="na">phone</span><span class="p">:</span><span class="nx">dL</span><span class="p">.</span><span class="nx">phoneNumber</span> 
+    <span class="p">};</span>
+<span class="p">});</span></code></pre></figure>
+
+<ul>
+  <li>I bet you didn’t need me to explain dL stood for Drivers License. It might have even annoyed you if I had spelled it out.  The further away some data gets from it origin the more it will need to be explained. But with one or two lines, one or two characters is probably just fine.</li>
+</ul>
+
+<h3 id="variable---wide-scope">Variable - Wide scope</h3>
+<p>Think a public database, or maybe color names.</p>
+<ul>
+  <li>Css Color Names is tricky because there are good and bad strategies for managing your applications colors.  But if you are trying to create names for all 16 million colors your going to need some long names.  Good luck keeping all of them meaningful.</li>
+  <li>Public Databases: I can say it is 72°F but that doesn’t mean much unless I also specify where and when. Which could be considered part of the name.  I know I am stretching this here, but we haven’t gone too far yet.  If you wanted to make a public database of temperatures your api might be</li>
+  <li>tempsDB.atLocation(48.85827172505176, 2.294531782785587).atTime(946645199)</li>
+  <li>tempsDB.atLocation(“Eiffel tower”).atTime(“Midnight”)</li>
+  <li>We are definitely stretching the definition of name to encompass that, but I don’t think it’s a stretch to say that we required a very long identifier to specify a piece of data we were looking for that had a wide scope.</li>
+  <li>it’s also easy to imagine a config file that would be consumed by an application that would require long names to specify different pieces of data the application would consume.</li>
+</ul>
+
+<h3 id="reflection">Reflection</h3>
+
+<p>Did you make it this far?  I will agree that some of the later examples got rougher, so I do not want to push this as gospel.  Just something to consider while you are writing your code.  Something that I reflected on as I was writing this is maybe this is a rule of thumb on when it is ok to abbreviate your names.  Ok, that kind of works.  If you are making a library like lodash or jquery, or another very commonly used function inside your own codebase; shortening that function name might be a good idea; and if you are where a variable is only going to live for 4 lines because you just pulled it from somewhere and are moving it somewhere else, then it might be ok to shorten that variable name.</p>
+
+<!--
+## Don't camel/kebab/snake case compound words
+-->
+
+:ET

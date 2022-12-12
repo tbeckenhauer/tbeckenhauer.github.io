@@ -1,0 +1,80 @@
+I"Ñ<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/Casing-conventions/">Naming: Casing Conventions</a>
+        </h2>
+      </li>
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/naming-conventions/">Naming: Naming Conventions</a>
+        </h2>
+      </li>
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/no-magic-numbers/">Naming: No Magic Numbers</a>
+        </h2>
+      </li>
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/ordering-the-functions-in-your-class/">Structuring: Ordering the functions in your class</a>
+        </h2>
+      </li>
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/style_guides/when-validating-input.html">Structuring: When Validating Inputs</a>
+        </h2>
+      </li>
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/style_guides/using-sane-defaults.html">Structuring: Using Sane Defaults</a>
+        </h2>
+      </li>
+    
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/read-the-error-message/">Read The Error Message</a>
+        </h2>
+      </li>
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/tutorials/2021-04-23-building-github-pages-on-android.html">Building GitHub Pages on Android</a>
+        </h2>
+      </li>
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/basics-of-docker/">Basics of Docker</a>
+        </h2>
+      </li>
+    
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/programing,/codingstyle/2018/11/18/new-aem-component.html">Copy And Pasting AEM Components</a>
+        </h2>
+      </li>
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/programing,/codingstyle/2016/05/15/prototype-pattern.html">Prototypes and Components to the Rescue</a>
+        </h2>
+      </li>
+    
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
+</div>
+:ET

@@ -1,0 +1,34 @@
+I"<p>I am learning AEM, and I am very new to the system.  I think this post will illustrate that, and possibly help other newbies.</p>
+
+<p>So the ticket I was working on was to make a header for some of the new landing pages for this site we are building.  A similar component already existed but didn’t fill all the use cases, so I figured I could copy and paste the component, so I don’t break the old one with my inexperience, but I have a new one two experiment with.</p>
+
+<p>So I copied and pasted the new page from another page. Surprisingly that worked pretty well.  I don’t recall having to make any special changes.</p>
+
+<p>so this was fine.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">&gt;</span> <span class="nb">cp </span>ui.content/../usa/en/originalpage ui.content/../usa/en/copiedpage</code></pre></figure>
+
+<p>but the trouble I ran into was when I tried to copy-paste an existing component, to work off of.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">&gt;</span> <span class="nb">cp </span>ui.apps/../components/content/originalcomponent ui.apps/../components/content/copiedcomponent</code></pre></figure>
+
+<p>I searched the code several times looking for references to ‘originalcomponent’, but I had forgotten to search by file name.  So I can’t quite explain it, but I seem to recall that AEM looks for files of the same name of the folder first, and that worked for me.</p>
+
+<p>This make me think of the <a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/resource-mapping.html">Resource Mapping</a>, and while I think that is related, I don’t think that is exactly what was going on.</p>
+
+<p>So I also needed to run</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">&gt;</span> <span class="nb">mv </span>copiedcomponent/originalcomponent.html copiedcomponent/copiedcomponent.html</code></pre></figure>
+
+<p>So I am pretty sure this also is related to how AEM can handle different file types for the same page.  So if you wanted to also define a JSP for a page then you could also</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">&gt;</span> vim copiedcomponent/copiedcomponent.jsp</code></pre></figure>
+
+<p>and then users could GET two different versions of the same page.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">&gt;</span> curl example.com/usa/en/copiedcomponent.jsp
+<span class="o">&gt;</span> curl example.com/usa/en/copiedcomponent.html</code></pre></figure>
+
+<p>This might be more useful with something like html/pdf, or json/xml, but I really don’t know, at this point I am hypothesizing.</p>
+
+:ET

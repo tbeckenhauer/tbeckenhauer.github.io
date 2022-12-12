@@ -1,0 +1,75 @@
+I"�<p>I am brand new to docker, so I though I might start documenting docker from the perspective of a beginner.  I will come back and correct any bad info as necessary.</p>
+
+<h3 id="mental-model">Mental Model</h3>
+<p>Docker data structures are similar to git.  If you understand the git (<a href="https://en.wikipedia.org/wiki/Merkle_tree">Merkle Trees</a>), then you would understand the docker data structure.</p>
+
+<h3 id="running-an-interactive-session">Running an Interactive Session</h3>
+<p>Assuming you want to start a docker image, you are gonna need a command like this. The ‘i’ stands for interactive. ‘t’ stands for tty.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-it</span> ubuntu bash
+</code></pre></div></div>
+
+<h3 id="running-a-gui">Running a GUI</h3>
+<p>Some of the guides out there I found to be a little complex if you are looking for something easily copy-and-pasteable.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#Host machine</span>
+<span class="nv">XAUTH_COOKIE</span><span class="o">=</span><span class="si">$(</span>xauth list | <span class="nb">head</span> <span class="nt">-n</span> 1 | <span class="nb">sed</span> <span class="nt">-e</span> s/:/<span class="si">$(</span><span class="nb">echo</span> <span class="nv">$DISPLAY</span><span class="si">)</span>/g<span class="si">)</span>
+docker run <span class="nt">-it</span> <span class="nt">--net</span><span class="o">=</span>host <span class="nt">-e</span> DISPLAY <span class="nt">-e</span> <span class="nv">XAUTH_COOKIE</span><span class="o">=</span><span class="s2">"</span><span class="nv">$XAUTH_COOKIE</span><span class="s2">"</span> <span class="nt">-v</span> /tmp/.X11-unix ubuntu bash
+
+<span class="c">#Docker container</span>
+apt update<span class="p">;</span> apt <span class="nb">install</span> <span class="nt">-y</span> xauth<span class="p">;</span> xauth add <span class="nv">$XAUTH_COOKIE</span><span class="p">;</span>
+
+<span class="c">#Test it. Make sure you don't have pinta on your host machine running otherwise X seems to get confused and create a new window for your host install of pinta.</span>
+apt <span class="nb">install</span> <span class="nt">-y</span> pinta<span class="p">;</span> pinta
+</code></pre></div></div>
+<p>See also:</p>
+<ol>
+  <li><a href="https://www.geeksforgeeks.org/running-gui-applications-on-docker-in-linux/">Geeks for Geeks</a></li>
+  <li><a href="https://www.cloudsavvyit.com/10520/how-to-run-gui-applications-in-a-docker-container/">CloudSavvyIt</a></li>
+  <li><a href="http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/">FabioRehm</a></li>
+</ol>
+
+<h3 id="sharing-data-with-the-host">Sharing data with the host</h3>
+<p>To do this effectivly you have to understand a little bit more about how docker works and the relevant permissions.</p>
+
+<p>So yes, the below command will technically work, the problem though is, the <code class="language-plaintext highlighter-rouge">dockerworkspace</code> folder on the host machine will be owned by root.  Meaning to interact with it in any way you will need to be root.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-v</span> ~/dockerworkspace:/workspace ubuntu
+</code></pre></div></div>
+
+<p>I think you will find the below series of commands much more effective.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#On the host machine create mappings of the permissions config files.</span>
+<span class="nv">PERM_CONF</span><span class="o">=</span><span class="s2">"-v /etc/passwd:/etc/passwd -v /etc/group:/etc/group -v /etc/shadow:/etc/shadow"</span>
+<span class="nv">perm_conf</span><span class="o">=(</span> <span class="nv">$PERM_CONF</span> <span class="o">)</span>
+<span class="c">#Run your docker container providing the permissions config files.</span>
+docker run <span class="nt">-it</span> <span class="nt">-v</span> ~/dockerworkspace:/workspace <span class="s2">"</span><span class="k">${</span><span class="nv">perm_conf</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span> ubuntu
+
+<span class="c">#When the mountbind is created it will be owned by root.  You can fix that like this. </span>
+<span class="nb">chown </span>normalHostUser workspace/
+<span class="nb">chgrp </span>normalHostGroup workspace/
+
+<span class="c">#Now login to your normal host user account.</span>
+su normalHostUser
+
+<span class="c">#Create a file with permissions that your normal host user will be able to access.</span>
+<span class="nb">touch</span> /workspace/createNonRootOwnedFile
+
+<span class="c">#Logout of normalHostUser (on docker)</span>
+<span class="nb">exit</span>
+
+<span class="c">#Logout of root (on docker)</span>
+<span class="nb">exit</span>
+
+<span class="c">#Confirm it worked (on host)</span>
+<span class="nb">ls</span> <span class="nt">-la</span> ~/dockerworkspace
+total 8
+drwxr-xr-x  2 normalHostUser normalHostGroup 4096 Jun  6 14:55 <span class="nb">.</span>
+drwxr-xr-x 35 normalHostUser normalHostGroup 4096 Jun  6 14:50 ..
+<span class="nt">-rw-rw-r--</span>  1 normalHostUser normalHostGroup    0 Jun  6 14:55 createNonRootOwnedFile
+</code></pre></div></div>
+
+<p>See Also:</p>
+<ol>
+  <li><a href="https://stackoverflow.com/questions/27925006/share-files-between-host-system-and-docker-container-using-specific-uid">Stack Overflow: Share Files Between host system and docker container</a></li>
+  <li><a href="https://medium.com/@mccode/understanding-how-uid-and-gid-work-in-docker-containers-c37a01d01cf">Marc Campbell: Understanding how uid and gid work in Docker containers</a></li>
+</ol>
+:ET

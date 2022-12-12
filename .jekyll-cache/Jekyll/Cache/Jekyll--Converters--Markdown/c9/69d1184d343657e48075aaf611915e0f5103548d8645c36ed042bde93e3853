@@ -1,0 +1,93 @@
+I"�<h3 id="things-to-consider">Things to consider</h3>
+
+<p>Let’s start with the novel, and heretical things first.</p>
+
+<h4 id="compound-and-prefixed-words-should-be-considered-one-word-strong-probability">Compound and Prefixed words should be considered one word (strong probability)</h4>
+<ul>
+  <li>I would rather see StylePreprocessor than StylePreProcessor.</li>
+  <li>I would rather see ConfigFilename than ConfigFileName.</li>
+</ul>
+
+<p>My rule of thumb here is if I would ever want to mechanically split the words. In the case of ConfigFilename, no I think the chances of me wanting to have a script iterate over a list of words blindly splitting on capital letters, or any of the below casing conventions I am going to be annoyed if I see words like Pre &amp; Processor or File &amp; Name.</p>
+
+<h4 id="mixing-casing-conventions-could-have-value">Mixing casing conventions could have value.</h4>
+<p>I once told a co-worker this to much of their scorn, but look how well <a href="http://getbem.com/naming/">BEM</a> took off.  It will always be a hack though.  Generally I find if I want to mix casing conventions, it’s because I am fitting multiple types or sources of data into just one field.  Here is an example.</p>
+
+<p>Let’s say I am writing a blog post on github, and it requires me to prefix the blog post markdown filename with the date I am writing the blog post. So <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code>.  Most developers might do <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-my-first-blog-post</code>.  Wouldn’t it be better if I used <code class="language-plaintext highlighter-rouge">YYYY-MM-DD_my-first-blog-post</code> or <code class="language-plaintext highlighter-rouge">YYYY-MM-DD--my-first-blog-post</code>.  I like the underscore best because if I ever need to regex the date from the title, I am ready to go.  With the double dash, I am sure I could make it work, but with a single dash, I am going to have to have regex available because I need the pattern matching to drop or get the date. But a simple find and replace utility isn’t going to cut it since that can distinguish between the dashes in the date, name, or between the date and name.</p>
+
+<p>Like I said, this will always be a hack, but that’s better than no solution.</p>
+
+<h4 id="reflection">Reflection</h4>
+<p>It seems to me, the question is if you ever want to mechanically separate the words, then you might need to consider your casing conventions.  Let’s also remember the source of casing conventions, a hack to improve the readability of code with limited systems.</p>
+
+<h4 id="notes">Notes</h4>
+
+<h5 id="is-your-system-case-insensitive">Is your system case insensitive?</h5>
+<ul>
+  <li>Is your file system case insensitive like the MacOs file system generally is?
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Case_preservation">Case-insensitive</a>
+        <ul>
+          <li>Case-preserving
+            <ul>
+              <li>VFAT, FAT32 which is basically always used with long filename support, NTFS, HFS Plus, APFS</li>
+            </ul>
+          </li>
+          <li>Non-case-preserving
+            <ul>
+              <li>FAT12, FAT16 only when without long filename support.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Is your programming language case insentive?
+    <ul>
+      <li>ABAP</li>
+      <li>Ada</li>
+      <li>BASIC (most of them)</li>
+      <li>Fortran</li>
+      <li>SQL</li>
+      <li>Pascal</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="quick-examples">Quick Examples</h5>
+<ul>
+  <li>Camel case
+    <ul>
+      <li>myVariable</li>
+    </ul>
+  </li>
+  <li>Snake case
+    <ul>
+      <li>my_variable</li>
+    </ul>
+  </li>
+  <li>Kebab case
+    <ul>
+      <li>my-variable</li>
+    </ul>
+  </li>
+  <li>Pascal case
+    <ul>
+      <li>MyVariable</li>
+    </ul>
+  </li>
+  <li>Upper case (with snake case)
+    <ul>
+      <li>MY_VARIABLE</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="sources">Sources</h5>
+<ul>
+  <li>https://chaseadams.io/posts/most-common-programming-case-types/</li>
+  <li>https://study.com/academy/lesson/case-insensitive-programming-languages.html</li>
+  <li>https://en.wikipedia.org/wiki/Case_sensitivity#In_programming_languages</li>
+  <li>https://en.wikipedia.org/wiki/Case_preservation</li>
+</ul>
+:ET

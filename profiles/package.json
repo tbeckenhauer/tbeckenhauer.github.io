@@ -1,0 +1,25 @@
+{
+  "name": "blog_tbeckenhauergithubio",
+  "version": "1.0.0",
+  "description": "[![.github/workflows/ci.yaml](https://github.com/pages-themes/hacker/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/hacker/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-hacker.svg)](https://badge.fury.io/rb/jekyll-theme-hacker)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbeckenhauer/tbeckenhauer.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbeckenhauer/tbeckenhauer.github.io/issues"
+  },
+  "homepage": "https://github.com/tbeckenhauer/tbeckenhauer.github.io#readme",
+  "dependencies": {
+    "puppeteer": "^19.4.0"
+  }
+}

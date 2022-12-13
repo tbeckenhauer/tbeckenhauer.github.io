@@ -15,3 +15,4 @@ vendor
 .idea
 .ruby-version
 *.gem
+profiles/node_modules

@@ -27,7 +27,7 @@ collections:
 
 # Build settings
 markdown: kramdown
-exclude: [vendor]
+exclude: [vendor, "*node_modules*"]
 
 theme: jekyll-theme-hacker
 show_downloads: true

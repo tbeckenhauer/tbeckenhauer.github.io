@@ -2,7 +2,7 @@
 layout: post
 title:  "Frontend and/or Full Stack Interview Template: Vue.js & Kotlin Spring Boot"
 date:   2023-07-18
-tags: [Programing, Interview, Frontend, FullStack, Vue.js, Kotlin, SpringBoot, Hiring, Softskills, HardSkills]
+tags: [Programming, Interview, Frontend, FullStack, Vue.js, Kotlin, SpringBoot, Hiring, Softskills, HardSkills]
 categories: Interview
 ---
 
@@ -14,41 +14,33 @@ In this post, we'll delve into an effective interview template designed for hiri
 
 The focus here is not merely on the proficiency in VueJS but extends to other prominent frontend frameworks such as Angular, React, and Svelte. We are aiming to uncover the candidates' depth of understanding and competence in their chosen technology.
 
-## Technical Screening
+## Screening
 
-For the technical screening, we aren't looking to perplex the candidate with unexpected trick questions. Instead, we present a list of questions and request them to answer as many as they can promptly. One effective question set I've used in the past is available [here](https://github.com/h5bp/Front-end-Developer-Interview-Questions).
+Our primary goal in this step is not to find candidates who are only proficient in Vue.js or Kotlin Spring Boot. Instead, we look for candidates who are excellent at their chosen technologies. Be it Angular, React, Vue.js, or Svelte for frontend development, or a variety of frameworks for backend development, we strive to find the best candidates in their chosen technology.
 
-Here is a simplified outline of topics you might want to cover:
-
-- JavaScript fundamentals and ES6+ features
-- Proficiency in chosen framework (VueJS, Angular, React, Svelte)
-- State management patterns and libraries
-- Testing and debugging
-- HTML & CSS principles, including responsiveness and accessibility
-- Performance optimization techniques
-- Understanding of backend architecture, if applicable
-- Familiarity with databases, APIs, and networking concepts
-- Understanding of code versioning tools, like Git
-- Familiarity with CI/CD pipeline and related tools
+For this process, we present candidates with a list of questions, rather than trying to surprise them with three trick question. I recommend using a structured question set, like the one provided by [H5BP's Front-end Developer Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions).
 
 ## Culture Fit/HR Round
 
-Beyond their technical proficiency, a candidate's fit within your company culture is paramount. Here are ten subtle yet tricky culture fit/HR interview questions that can help assess this:
+The next step is ensuring the candidate fits within your company's culture. Here are some Culture Fit/HR interview questions:
 
-1. Can you tell us about a time when you had to adapt to a significant change at work?
-2. How do you handle pressure or stressful situations at work?
-3. Can you describe a situation where you needed to collaborate with a difficult colleague?
-4. Have you ever worked with a team that struggled? What did you do?
-5. Can you tell us about a time when your values were challenged at work? What did you do?
-6. How do you stay motivated when facing repetitive tasks or assignments?
-7. Can you describe a situation where you had to take initiative to solve a problem?
-8. What are your methods for handling criticism?
-9. Can you tell us about a time when you made a mistake at work and how you handled it?
-10. Can you share an example of a time when you had to balance achieving your own results with supporting the success of your team?
+1. Describe a situation where you've had to adapt to significant change at work.
+2. How do you typically handle pressure or stressful situations in your professional life?
+3. Can you share an experience where you had to collaborate with a challenging colleague?
+4. Discuss an instance where you were part of a struggling team. How did you handle it?
+5. Describe a situation when your values were tested at work. How did you react?
+6. How do you stay motivated when facing repetitive tasks?
+7. Discuss an instance where you had to take the initiative to solve a problem.
+8. How do you handle criticism? Can you provide an example?
+9. Discuss a professional mistake you've made and how you handled it.
+10. Can you share an example of when you had to balance your individual goals with your team's success?
 
-These questions help to delve into the candidates' resilience, adaptability, interpersonal skills, problem-solving abilities, and their emotional intelligence. Remember, the goal is not merely to assess if they can do the job, but also to determine if they'd mesh well with your team and your company's culture.
+## Technical Panel
 
-Hiring is a holistic process that extends beyond technical prowess. A comprehensive interview process, such as the one outlined above, can ensure that new hires would be a strong fit both technically and culturally, leading to a more productive and harmonious workplace.
+During this phase, a panel of developers interviews the candidate. This involves a deep dive into the candidate's technical skills, from their understanding of Vue.js or their chosen frontend technology, to their familiarity with Kotlin Spring Boot or their chosen backend framework.
 
-Happy hiring!
+Here, the conversation could be about JavaScript fundamentals, ES6+ features, state management patterns and libraries, testing and debugging strategies, HTML & CSS principles, responsive and accessible design, performance optimization, and more.
 
+The purpose of these discussions is to assess the candidate's depth and breadth of knowledge and their ability to apply that knowledge in real-world situations.
+
+In summary, a well-rounded interview process is essential for hiring top-tier frontend and full stack developers. It should not merely assess technical skills but also consider the candidate's cultural fit and their ability to adapt to new technologies and challenges. I hope this interview template proves useful for your hiring endeavors!

@@ -7,6 +7,7 @@ categories: Interview
 ---
 
 I need you to write a new blog post for me.
+- Give me markdown in a codeblock
 - Include estimated reading time.
 
 - Intro
@@ -20,7 +21,7 @@ I need you to write a new blog post for me.
 
 -Technical Panel, 
 -- Instead of trying to surprise the candidate with trick questions, I "present the candidate with a list of questions" and ask them to quickly answer as many as possible. In the past I have used https://github.com/h5bp/Front-end-Developer-Interview-Questions for frontend, and https://github.com/arialdomartini/Back-End-Developer-Interview-Questions#db-migrations looks good for backend.
--- Coding Challenge
+-- Coding Challenge: Should be done on candidates computer, live. Create a simple CRUD application, see how far they get in their preferred technology. FE should store to local storage. Fullstack should store to a database. 
 
 - For the Culture Fit/HR round
 -- Give me 10 sample questions

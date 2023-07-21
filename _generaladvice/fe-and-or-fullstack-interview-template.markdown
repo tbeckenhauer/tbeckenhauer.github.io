@@ -36,7 +36,7 @@ Instead of surprising candidates with trick questions, we find it more effective
 - [Front-end Developer Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions) for frontend-related queries.
 - [Back-End Developer Interview Questions](https://github.com/arialdomartini/Back-End-Developer-Interview-Questions#db-migrations) for backend-related queries.
 
-Additionally, a coding challenge is an excellent way to assess a candidate's problem-solving ability and how they approach coding tasks. Be sure to tailor the challenge to the role and its responsibilities.
+A live coding challenge forms a crucial part of this round. The candidate should create a simple CRUD (Create, Read, Update, Delete) application on their computer. The main focus here is to observe their problem-solving approach, code structuring, and adherence to best practices. For frontend roles, the application should store data to local storage, while full-stack roles should store to a database.
 
 ## Culture Fit/HR Round
 

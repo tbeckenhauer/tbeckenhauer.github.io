@@ -9,7 +9,7 @@ In the world of software development, we often find ourselves grappling with the
 
 Let's break down this timeless principle.
 
-## 1. **Make it Work**
+## 1. **Make it "Work"**
 
 ### Understanding the Principle:
 
@@ -21,7 +21,7 @@ This is the basic foundation of any software - its functionality. Before anythin
   
 - **Momentum**: Once you have a working version, it gives you the momentum and motivation to refine and improve it.
 
-## 2. **Make it Well**
+## 2. **Make it "Work Well"**
 
 ### Understanding the Principle:
 
@@ -33,7 +33,7 @@ Once the software is functional, the next step is to refine it. This means clean
 
 - **Collaboration**: Well-structured code is easier for other developers to understand and contribute to.
 
-## 3. **Make it Fast**
+## 3. **Make it "Work Fast"**
 
 ### Understanding the Principle:
 

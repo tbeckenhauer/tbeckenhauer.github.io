@@ -5,8 +5,6 @@ date:   2023-09-17 18:27:00
 categories: GeneralAdvice
 ---
 
-# Make it Work, then Well, then Fast
-
 In the world of software development, we often find ourselves grappling with the decision of how to prioritize our coding process. Should we first get our code to run efficiently, or should we focus on just getting it to run? This common dilemma brings us to a classic piece of advice: _Make it Work, then Well, then Fast_.
 
 Let's break down this timeless principle.

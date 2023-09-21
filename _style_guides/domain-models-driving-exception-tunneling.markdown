@@ -14,7 +14,7 @@ author: [Thomas Beckenhauer]
 
 ## Handling Exceptions with Vue3 & Kotlin: From Frontend to Backend
 
-In the [previous post](link-to-previous-post), we discussed the essence of "Tunneling Input Exceptions to Output Exceptions". Today, we'll delve deeper into the practical application of this principle, examining the flow from the frontend (Vue3 & Vuex) to the backend (Kotlin with Spring Boot).
+In the [previous post](/style_guides/tunneling-input-exceptions-to-output-exceptions), we discussed the essence of "Tunneling Input Exceptions to Output Exceptions". Today, we'll delve deeper into the practical application of this principle, examining the flow from the frontend (Vue3 & Vuex) to the backend (Kotlin with Spring Boot).
 
 ### Domain Objects
 

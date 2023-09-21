@@ -5,7 +5,6 @@ description: "A practical guide to handling exceptions and validation from the f
 date: 2023-09-20 14:30:00 -0700
 categories: [software-development, vue3, kotlin]
 tags: [exception-handling, vue3, vuex, kotlin, spring-boot, domain-driven-development]
-permalink: /domain-models-driving-exception-tunneling/
 author: [Thomas Beckenhauer]
 ---
 

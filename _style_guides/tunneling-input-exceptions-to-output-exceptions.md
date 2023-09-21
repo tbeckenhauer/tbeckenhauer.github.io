@@ -49,7 +49,7 @@ def presentation_layer_function():
     try:
         business_logic_layer_function()
     except CustomException as e:
-        print(f"Caught an exception: {e}")
+        print("Caught an exception: {e}")
         # Handle the exception in a user-friendly manner
 
 if __name__ == "__main__":

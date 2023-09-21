@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tunneling Input Exceptions to Output Exceptions and the Unit Tests in Python that Demonstrate This"
+title:  "Tunneling Input Exceptions to Output Exceptions"
 date:   2023-09-20 12:00:00 -0700
 categories: programming python testing
 tags: exceptions tunneling unit-tests jekyll github-pages

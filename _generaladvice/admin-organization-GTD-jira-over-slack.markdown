@@ -9,6 +9,8 @@ permalink: /jira-over-slack-gtd/
 author: [Thomas Beckenhauer]
 ---
 
+![JIRA vs SLACK](admin-organization-GTD-jira-over-slack.png)
+
 ## JIRA over SLACK: The Case for Ticket-based Communication
 
 Workplace communication has seen dramatic shifts with the rise of digital tools. As digital workspaces burgeon with platforms like JIRA and Slack, there's a crucial decision to be made: where should our primary communication reside? The "Getting Things Done" (GTD) methodology, pioneered by David Allen, may have the answer.

@@ -5,7 +5,6 @@ description: "Exploring the principles of the GTD methodology and its implicatio
 date: 2023-09-21 10:30:00 -0700
 categories: [productivity, communication, project-management]
 tags: [gtd, jira, slack, communication, project-management]
-permalink: /jira-over-slack-gtd/
 author: [Thomas Beckenhauer]
 ---
 

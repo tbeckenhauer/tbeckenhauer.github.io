@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "Javascript: of vs in"
+tags: [Programing, GeneralAdvice, Javascript, Always]
+date:   2021-07-22 00:00:00
+permalink: /of-vs-in/
+---
+ 
+ Just a thing to be careful with.
+
+## Summary
+If you are using for...in you might need to add in a .hasOwnProperty() check, or you might rather use for...of.
+
+## Details
+Way back in the day all we had was for...in, and it was tricky. It could "[iterate over the enumerable properties of an object, in an arbitrary order](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of#difference_between_for...of_and_for...in)".  Let's unpack that a little bit. 
+Objects: That means it can iterate over Strings, Functions, Date, RegExp, Arrays, and more.  In my testing, wondering if I could get anything out of Dates and RegExp, I couldn't.  Why is that?
+
+```javascript
+for (var x in new Date()) {
+  console.log(x)
+}
+undefined
+```
+It has properties, but not any enumerable properties.
+
+```javascript
+var y2k = new Date(2000, 0, 1);
+y2k.disaster = true;
+for (var x in y2k) {
+  console.log(x);
+}
+"disaster"
+```
+
+Let's build out something more elaborate.
+```javascript
+var GenericDisaster = { doZombiesShowUp: undefined, doAliensShowUp: undefined }
+function Y2K() {
+    this.date = new Date(2000, 0, 1);
+}
+function Y2K() {
+    this.date = new Date(2000, 0, 1);
+    this.countriesThatPrepared = ['USA', 'UK', 'Canada', 'Australia']; //Nothing to see here, move along.
+    this.didBadStuffHappen = 'not really'
+    //Sorry, I just listened to the 'You're Wrong About' episode on this.
+}
+Y2K.prototype = GenericDisaster;
+var y2k = new Y2K();
+for(var x in y2k) {
+    console.log(x);
+}
+> date
+> countriesThatPrepared
+> didBadStuffHappen
+> doZombiesShowUp
+> doAliensShowUp
+```
+So we end up looping over all this stuff from 'GenericDisaster' that we may not have wanted. Easy fix for that, even if it's a little ugly, is to use .hasOwnProperty()
+
+```javascript
+for(var x in y2k) {
+  if(y2k.hasOwnProperty(x)) { 
+    console.log(x);
+  }
+}
+> date
+> countriesThatPrepared
+> didBadStuffHappen
+```
+
+Boom. Easy. Oh wait, order isn't guaranteed.
+
+Obviously more to talk about, but that's enough for now.

@@ -1,0 +1,1 @@
+Okay please write a bash function that can handle these inputs. paths of AEM Servlet and path of empty springboot app and scan for an "import network of packages"

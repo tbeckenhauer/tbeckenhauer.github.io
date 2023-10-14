@@ -1,0 +1,1 @@
+okay lets write a zsh script that depends on maven that can that can turn a directory of java, css, html, javascript files into a maven package

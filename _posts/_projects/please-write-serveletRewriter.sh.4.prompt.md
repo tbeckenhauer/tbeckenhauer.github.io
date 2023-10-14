@@ -1,0 +1,1 @@
+Ok thanks, can we put that in a simple loop that will prompt the user to install that missing package?

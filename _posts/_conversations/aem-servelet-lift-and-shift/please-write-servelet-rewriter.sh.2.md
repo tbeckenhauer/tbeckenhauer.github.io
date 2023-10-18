@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "AEM Servelet Lift and Shift 2"
+tags: [Project]
+---
+
 To recursively copy the Java files from the AEM Servlet directory to the Spring Boot application directory and scan for import statements, we can modify the script as follows. This script now includes functionality to copy files from the source directory to the destination, maintaining the directory structure. Please ensure you have the necessary permissions to read and write to these directories.
 
 ```bash

@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "AEM Servelet Lift and Shift 1"
+tags: [Project]
+---
+
 Creating a Bash function to handle the input paths of an AEM Servlet and an empty Spring Boot application, and then scan for an "import network of packages," requires a fair amount of string manipulation and file operations. Below is a simplified example of how you might start this. This script assumes that your project files are Java files and that you're operating in a Unix-like environment.
 
 Please note, this script does not handle the complexity of parsing Java files fully (like handling multiline comments, strings, etc.), but it should serve as a starting point. A more robust solution might involve a dedicated parser or a more sophisticated program written in a language that can handle file parsing more gracefully than Bash.

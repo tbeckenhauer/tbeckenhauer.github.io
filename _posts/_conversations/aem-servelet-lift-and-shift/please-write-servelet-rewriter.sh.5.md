@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "AEM Servelet Lift and Shift 5"
+tags: [Project]
+---
+
 Creating a Spring Boot project involves a few steps and usually relies on a build tool like Maven or Gradle. While you can manually create the files and directory structure, it's common practice to use Spring Initializr, which generates a template project for you. However, Spring Initializr can be used via curl from the command line, so we can still achieve this with a bash script.
 
 Here's how you might write a bash script to generate a basic Spring Boot project with Maven:

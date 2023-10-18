@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "AEM Servelet Lift and Shift 3"
+tags: [Project]
+---
+
 Certainly, migrating a Tomcat-based Java servlet application to a Spring Boot application involves several steps, including directory structure changes, build script modifications (like Maven's `pom.xml`), and configuration updates. This script will primarily focus on copying relevant files from the Tomcat application to a new Spring Boot structure. Here's how you might structure a script for this:
 
 ```bash

@@ -17,14 +17,23 @@ include: [ ]
 collections_dir: ./_posts
 
 collections:
+  project_outlines:
+    output: false
   style_guides:
     output: true
-  generaladvice:
+  general_advice:
     output: true
   patterns:
     output: true
   tutorials:
     output: true
+  conversations:
+    output: true
+    skip: true
+  misc:
+    output: true
+  posts:
+    skip: true
 
 # Build settings
 markdown: kramdown

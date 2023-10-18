@@ -3,65 +3,21 @@ layout: default
 ---
 
 <div class="home">
-  <h2>Style Guides</h2>
-  <ul class="post-list">
-    {% for style_guide in site.style_guides %}
+  {% for col in site.collections %}
+    {% if col.skip != true %}
+    <h2 style="text-transform: capitalize;">{{ col.label | replace: "_", " " | capitalize }}</h2>
+    <ul class="post-list">
+      {% for post in col.docs %}
       <li>
         <h3>
-          <a  class="post-link" 
-              href="{{ style_guide.url | prepend: style_guide.baseurl }}">{{ style_guide.title }}</a>
+          <a  class="post-link"
+              href="{{ post.url | prepend: post.baseurl }}">{{ post.title }}</a>
         </h3>
       </li>
-    {% endfor %}
-  </ul>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  {% endfor %}
 
-  <h2>General Advice</h2>
-  <ul class="post-list">
-    {% for ga in site.generaladvice %}
-      <li>
-        <h3>
-          <a  class="post-link" 
-              href="{{ ga.url | prepend: ga.baseurl }}">{{ ga.title }}</a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-   
-  <h2>Patterns</h2>
-  <ul class="post-list">
-    {% for pattern in site.patterns %}
-      <li>
-        <h3>
-          <a  class="post-link" 
-              href="{{ pattern.url | prepend: pattern.baseurl }}">{{ pattern.title }}</a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <h2>Technology Specific</h2>
-  <ul class="post-list">
-    {% for tutorial in site.tutorials %}
-      <li>
-        <h3>
-          <a  class="post-link" 
-              href="{{ tutorial.url | prepend: tutorial.baseurl }}">{{ tutorial.title }}</a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-  
-  <h2>Misc</h2>
-  <ul class="post-list">
-      <li>
-        <h3>
-          <a  class="post-link" 
-              href="/ideas">Ideas</a>
-        </h3>
-      </li>
-  </ul>
-  
-  
   <p>Opinions are my own and not the views of my employer.</p>
 </div>
-

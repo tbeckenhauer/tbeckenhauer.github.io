@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "AEM Servelet Lift and Shift 4"
+tags: [Project]
+---
+
 Certainly! To continuously prompt the user to resolve missing imports, you can add a loop that requests user action for each missing import. Here's how you might modify the script to include this functionality:
 
 ```kotlin

@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "AEM Servelet Lift and Shift 6"
+tags: [Project]
+---
+
 Creating a Maven package from a directory of Java, CSS, HTML, and JavaScript files involves structuring the files according to Maven's standard directory layout, generating a `pom.xml` file, and executing Maven commands to build the package. This script assumes that your files are not already in a Maven structure, and it will attempt to create a simple Maven webapp structure, move files into the appropriate directories, and build the project.
 
 ```zsh

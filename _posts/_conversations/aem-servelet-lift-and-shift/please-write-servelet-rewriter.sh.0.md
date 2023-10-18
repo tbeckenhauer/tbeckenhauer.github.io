@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AEM Servelet Re-Writer to SpringBoot"
+title:  "AEM Servelet Lift and Shift 0"
 tags: [Project]
 ---
 

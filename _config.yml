@@ -17,6 +17,8 @@ include: [ ]
 collections_dir: ./_posts
 
 collections:
+  physics:
+    output: true
   project_outlines:
     output: false
   style_guides:

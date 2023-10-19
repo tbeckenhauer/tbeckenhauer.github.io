@@ -17,10 +17,6 @@ include: [ ]
 collections_dir: ./_posts
 
 collections:
-  physics:
-    output: true
-  project_outlines:
-    output: false
   style_guides:
     output: true
   general_advice:
@@ -28,11 +24,6 @@ collections:
   patterns:
     output: true
   tutorials:
-    output: true
-  conversations:
-    output: true
-    skip: true
-  misc:
     output: true
   posts:
     skip: true

@@ -2,9 +2,9 @@
 layout: post
 title:  "What are Exceptions?"
 categories: exceptions javascript
+tags: [Programing, GeneralAdvice, Docker, Tools]
 ---
 
----
 # Handling Exceptions in Vue.js: A Practical Guide
 
 Let's learn how JS exceptions propagate, manage state through Vuex getters, and handle network request errors in GraphQL.

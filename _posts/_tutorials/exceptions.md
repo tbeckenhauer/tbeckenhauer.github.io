@@ -1,7 +1,7 @@
 --
 layout: post
 title:  "What are Exceptions?"
-categories: jekyll update
+categories: exceptions javascript
 ---
 
 ---

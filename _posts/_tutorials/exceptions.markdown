@@ -3,6 +3,7 @@ layout: post
 title:  "What are Exceptions?"
 categories: exceptions javascript
 tags: [Programing, GeneralAdvice, Tools]
+permalink: /exceptions/
 ---
 
 # Handling Exceptions in Vue.js: A Practical Guide

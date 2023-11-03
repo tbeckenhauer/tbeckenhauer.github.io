@@ -24,10 +24,10 @@ Run `git log --all --decorate --oneline --graph #I remember that by All Dogs...`
 
 You'll see a graph that looks like this. Imagine you are looking for Commit D.
 
-         +-D1-D2 (feature branch)
-        /
-A---B---C---D---E (main branch)
-\
+         +-D1-D2 (feature branch) 
+        / 
+A---B---C---D---E (main branch) 
+\ 
  +--F--G (release/3.14.0-branch)
 
 run `git cherry-pick D`

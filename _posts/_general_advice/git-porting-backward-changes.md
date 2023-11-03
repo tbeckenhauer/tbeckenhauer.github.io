@@ -17,22 +17,45 @@ The first thing you need to do is check out the branch you want to commit your c
 
 This is the branch you want your fix to be in.  But you have your work idealy in 2 places
 
-1. All of your original commits, scratch work and all in the feature branch
-2. Your final answer squashed down in the `develop` branch
+1. All of your original commits, scratch work and all in the feature branch, these are commits D1, and D2.
+2. Your final answer squashed down in the `develop` branch, this is commit D
 
-Run `git log --all --decorate --oneline --graph #I remember that by All Dogs...`
+Run `git log --all --decorate --oneline --graph`
+
+I remember that by All Dogs...
 
 You'll see a graph that looks like this. Imagine you are looking for Commit D.
 ```
          +-D1-D2 (feature branch) 
         / 
-A---B---C---D---E (main branch) 
+A---B---C---D---E (develop branch) 
 \ 
  +--F--G (release/3.14.0-branch)
 ```
 
-run `git cherry-pick D`
+run `git cherry-pick D`, but you will need the first 5-7 characters of the git sha.
 
 Apply your commit message.
-Push Up to `release/3.14.1`
-And that should be that for preping your branch.
+Push up to `release/3.14.1`
+
+And that should be that for preping your release branch, but you have one more step.
+
+Your release branches should now look like this.
+```
+         +-D1-D2 (feature branch) 
+        / 
+A---B---C---D---E (develop branch) 
+\ 
+ +--F--G (release/3.14.0-branch)
+        \ 
+          +--D* (release/3.14.1-branch)
+```
+
+Note that D* is not the same as D. The diff may well be identical, but what makes up a commit are a few things. 
+1. The changes.
+2. The message.
+3. The ancesstor commits. 
+
+When you cherry pick the commit it makes it an inherritly different commit.  If you are following a git-flow model, you will want to merge your release branch back to your develop branch and your main branch.  See the original git-flow diagram below.
+
+![]({{ site.url }}/_general_advice/git-model.png)

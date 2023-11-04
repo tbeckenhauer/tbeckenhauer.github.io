@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Backporting Changes in Git"
+title:  "soft-wa.re/general_advice/git-porting-backward-changes"
 date:   2023-11-02 00:00:00
 tags: [Git, VersionControl, Collaboration, BestPractices, PullRequests, CodeMerge, Teamwork, DeveloperTools, SoftwareDevelopment, CodingGuidelines]
 ---

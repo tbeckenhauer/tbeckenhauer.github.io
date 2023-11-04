@@ -63,4 +63,4 @@ Note that D* is not the same as D. The diff may well be identical, but what make
 
 When you cherry pick the commit it makes it an inherritly different commit.  If you are following a git-flow model, you will want to merge your release branch back to your develop branch and your main branch.  See the original git-flow diagram below.
 
-![]({{ site.url }}/general_advice/git-model.png | width=100 )
+![]({{ site.url }}/general_advice/git-model.png)

@@ -5,9 +5,6 @@ date:   2023-11-02 00:00:00
 tags: [Git, VersionControl, Collaboration, BestPractices, PullRequests, CodeMerge, Teamwork, DeveloperTools, SoftwareDevelopment, CodingGuidelines]
 ---
 
-# Backporting Changes in Git
-
-
 ## Why you would want to?
 
 You have changes that have been sent to develop, that you also want to go to production, right now, in a hotfix, or an offcycle or what have you.

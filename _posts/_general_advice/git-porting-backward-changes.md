@@ -5,7 +5,10 @@ date:   2023-11-02 00:00:00
 tags: [Git, VersionControl, Collaboration, BestPractices, PullRequests, CodeMerge, Teamwork, DeveloperTools, SoftwareDevelopment, CodingGuidelines]
 ---
 
-Why you would want to?
+# Backporting Changes in Git
+
+
+## Why you would want to?
 
 You have changes that have been sent to develop, that you also want to go to production, right now, in a hotfix, or an offcycle or what have you.
 
@@ -40,6 +43,8 @@ Push up to `release/3.14.1`
 
 And that should be that for preping your release branch, but you have one more step.
 
+## Divergant Branches and Merging Forward
+
 Your release branches should now look like this.
 ```
          +-D1-D2 (feature branch) 
@@ -58,4 +63,4 @@ Note that D* is not the same as D. The diff may well be identical, but what make
 
 When you cherry pick the commit it makes it an inherritly different commit.  If you are following a git-flow model, you will want to merge your release branch back to your develop branch and your main branch.  See the original git-flow diagram below.
 
-![]({{ site.url }}/general_advice/git-model.png)
+![]({{ site.url }}/general_advice/git-model.png | width=100 )

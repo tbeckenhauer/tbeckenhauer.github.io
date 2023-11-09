@@ -7,7 +7,8 @@ layout: default
     {% if col.skip != true %}
     <h2 style="text-transform: capitalize;">{{ col.label | replace: "_", " " | capitalize }}</h2>
     <ul class="post-list">
-      {% for post in col.docs | sort: 'title' %}
+      {% assign sortedPosts = col.docs | sort: 'title' %}
+      {% for post in sortedPosts %}
       <li>
         <h3>
           <a  class="post-link"

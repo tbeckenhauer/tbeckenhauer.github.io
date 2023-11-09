@@ -12,7 +12,7 @@ layout: default
       <li>
         <h3>
           <a  class="post-link"
-              href="{{ post.url | prepend: post.baseurl }}">{{ post.title }}</a>
+              href="{{ post.url | remove: '.html' | prepend: post.baseurl }}">{{ post.title }}</a>
         </h3>
       </li>
       {% endfor %}

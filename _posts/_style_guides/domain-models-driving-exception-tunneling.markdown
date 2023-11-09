@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Domain Models Driving Exception Tunneling: From Frontend to Backend"
+title: "Exceptions: Domain Models Driving Exception Tunneling: From Frontend to Backend"
 description: "A practical guide to handling exceptions and validation from the frontend in Vue3 & Vuex to the backend in Kotlin with Spring Boot."
 date: 2023-09-20 14:30:00 -0700
 categories: [software-development, vue3, kotlin]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Organizing Exceptions in Code: A Three-Step Mantra"
+title:  "Exceptions: 3 Rules for Organizing Exceptions in Code"
 categories: exceptions 
 tags: [Programing, GeneralAdvice, Tools]
 ---

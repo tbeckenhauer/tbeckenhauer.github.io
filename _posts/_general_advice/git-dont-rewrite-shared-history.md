@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "When and When not to Rewrite History in Git-flow"
+title:  "Git: When and When not to Rewrite History in Git-flow"
 date:   2023-09-29 00:00:00
 tags: [Git, VersionControl, Collaboration, BestPractices, PullRequests, CodeMerge, Teamwork, DeveloperTools, SoftwareDevelopment, CodingGuidelines]
 ---

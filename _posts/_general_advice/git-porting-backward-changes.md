@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Backporting Changes in Git"
+title:  "Git: Backporting Changes in Git"
 date:   2023-11-02 00:00:00
 tags: [Git, VersionControl, Collaboration, BestPractices, PullRequests, CodeMerge, Teamwork, DeveloperTools, SoftwareDevelopment, CodingGuidelines]
 ---

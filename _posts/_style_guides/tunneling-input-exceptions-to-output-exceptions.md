@@ -4,7 +4,6 @@ title:  "Exceptions: Tunneling Input Exceptions to Output Exceptions"
 date:   2023-09-20 12:00:00 -0700
 categories: programming python testing
 tags: exceptions tunneling unit-tests jekyll github-pages
-permalink: style_guides/tunneling-input-exceptions-to-output-exceptions
 ---
 
 Software development often involves handling exceptions to ensure applications are resilient and user-friendly. One nuanced practice in this domain is the "tunneling" of exceptions from one layer or component to another. In this post, we'll dive deep into the concept of exception tunneling and its implementation in Python. Moreover, we'll demonstrate how to effectively test this behavior using unit tests.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tunneling Input Exceptions to Output Exceptions"
+title:  "Exceptions: Tunneling Input Exceptions to Output Exceptions"
 date:   2023-09-20 12:00:00 -0700
 categories: programming python testing
 tags: exceptions tunneling unit-tests jekyll github-pages
@@ -68,7 +68,3 @@ This unit test checks two things:
 ## Conclusion
 
 Tunneling exceptions provide a structured way to handle errors, allowing each layer or component to deal with only the level of error granularity relevant to it. Combined with rigorous unit testing, this practice ensures that our software behaves predictably even in unexpected situations.
-
----
-
-That's a basic post on the topic, including a simple example and unit test. You can expand on this with more detailed scenarios, further background on exceptions in Python, or additional testing techniques as needed.

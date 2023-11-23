@@ -1,1 +1,38 @@
-"Last week the issue came up where we needed "backport" a fix from our develop branch into a release branch. I wanted to document some detailed instructions on how you might go about that while keeping your branches compatible. Feel free to send me feed back! :D"|https://soft-wa.re/general_advice/git-porting-backward-changes
+	30	Date		Message	Title		
+				Check out this new blog post on developing new features! I share my advice: "Make it work, then make it work well, then make it work fast." Read more here: https://lnkd.in/gxknZNch hashtag#SoftwareDevelopment hashtag#ProductManagement	Make it Work, then Well, then Fast		
+				Check out my latest blog post on communication over ticketing systems! In this post, I share my thoughts on using JIRA over Slack for better organization the inspiration is from "Getting Things Done". Read it here: https://lnkd.in/g_mTzpEx. Let me know your thoughts! And don't forget to check back every Monday for new blog posts.	JIRA over SLACK: The Case for Ticket-based Communication		
+				💡 Even experienced git users sometimes get mixed up one when it's ok to rewrite git history. In my new blog post I go over some of the details with examples of when you should and should not rewrite git history🔗 https://lnkd.in/gr3HxyjE hashtag#GitFlow hashtag#BestPractices hashtag#SoftwareDevelopment hashtag#PullRequests hashtag#TeamworkMatters ✨👩‍💻👨‍💻🚀	Git: When and When not to Rewrite History in Git-flow		
+				Last week I asked what are soft-wa.re/exceptions, today we are answering how to structure them with style. 😁	Exceptions: 3 Rules for Organizing Exceptions in Code		
+				Migrating your team and codebase from Bitbucket to GitHub can be a daunting task, especially if you want to preserve all branches and maintain the development history intact. In this post, we’ll go through the process step-by-step and provide you with scripts to make this transition as smooth as possible.	Git: Migrating a Team and Their Codebase from Bitbucket to GitHub		
+				Last week the issue came up where we needed "backport" a fix from our develop branch into a release branch. I wanted to document some detailed instructions on how you might go about that while keeping your branches compatible. Feel free to send me feed back! :D	Git: Backporting Changes in Git		
+							https://github.blog/2023-10-30-the-architecture-of-todays-llm-applications/
+1	1	1/1/2024	needs work	Most Important Things First This post will be short, as I will leave further detailed discussion herein; focusing on the specific recommendation(s) within each narrowly-scoped post. To me, this is an important life principle, but I’ve also found it to be an important strategy for developing and maintaining code.  There is nothing revolutionary about this, yet I don’t see enough developers paying attention to how they sort their code for readability.  Ordering of words in a function/variable name. Ordering of declaration/calling of functions in a class definition. When Validating Inputs Choosing the most important tickets to get done in a sprint.		Most Important Things First	
+2	1	1/15/2024	needs work			Read The Error Message	
+3	1	1/29/2024	go	Dive into effective input validation strategies in my latest Soft-wa.re blog post. Discover why positive test cases triumph over negative ones for cleaner, more reliable code. Learn key practices for validating inputs at system boundaries and enhance your coding efficiency. Join the discussion on this crucial programming topic. #Programming #BestPractices #SoftwareDevelopment	Structuring: When Validating Inputs		
+4	1	2/12/2024					
+5	1	2/26/2024	pass			Prototypes and Components to the Rescue	
+6	1	3/11/2024	needs work			Code Comments: When to use them	
+7	1	3/25/2024	needs work	GUI/Output Exception Handleing	Exceptions: Domain Models Driving Exception Tunneling: From Frontend to Backend		
+8	1	4/8/2024	go		Structuring: Using Sane Defaults		
+9	1	4/22/2024	go		Structuring: Ordering the functions in your class		
+10	1	5/6/2024	go		Naming: Naming Conventions		
+11	1	5/20/2024	repetative			Naming: No Magic Numbers	
+12	1	6/3/2024	needs work		Structuring: Early Returns(rebuttal-rebuttal :))		
+13	1	6/17/2024				Structuring: Early Returns(For)	
+14	1	7/1/2024	needs work		Yoda Conditionals: Why you should use them.		
+15	1	7/15/2024					
+16	1	7/29/2024	needs expansion			Basics of Docker	
+17	1	8/12/2024	needs expansion			Building GitHub Pages on Android	
+18	1	8/26/2024	needs expansion			Exceptions: Tunneling Input Exceptions to Output Exceptions	
+19	1	9/9/2024			Feature Branches and Environment Branches		
+20	1	9/23/2024			Javascript: includes(...) vs indexOf(...)		
+21	1	10/7/2024			Javascript: of vs in		
+22	1	10/21/2024			What are Exceptions?		
+23	1	11/4/2024			GTD for the enterprise		
+24	1	11/18/2024					
+25	1	12/2/2024				Copy And Pasting AEM Components	
+26	1	12/16/2024					
+27	1	12/30/2024					
+28	1	1/13/2025					
+29	1						
+30	1						

@@ -1,0 +1,1 @@
+"Last week the issue came up where we needed "backport" a fix from our develop branch into a release branch. I wanted to document some detailed instructions on how you might go about that while keeping your branches compatible. Feel free to send me feed back! :D"|https://soft-wa.re/general_advice/git-porting-backward-changes

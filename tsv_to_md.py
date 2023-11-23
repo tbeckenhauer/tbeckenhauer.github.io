@@ -3,13 +3,15 @@ import os
 import frontmatter
 
 md_path = './markdown_files'  # Directory containing markdown files
-tsv_file = 'data.tsv'  # TSV file path
+tsv_file = 'test.tsv'  # TSV file path
 
 # Read TSV file
 metadata_dict = {}
 with open(tsv_file, 'r') as file:
     reader = csv.DictReader(file, delimiter='\t')
+    print(reader.fieldnames)
     for row in reader:
+        print(row)
         metadata_dict[row['filename']] = row
 
 # Update markdown files

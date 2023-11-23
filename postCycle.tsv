@@ -1,4 +1,4 @@
-	30	Date		Message	Title		
+a	30	Date	Message	Title	Aout	filename
 				Check out this new blog post on developing new features! I share my advice: "Make it work, then make it work well, then make it work fast." Read more here: https://lnkd.in/gxknZNch hashtag#SoftwareDevelopment hashtag#ProductManagement	Make it Work, then Well, then Fast		
 				Check out my latest blog post on communication over ticketing systems! In this post, I share my thoughts on using JIRA over Slack for better organization the inspiration is from "Getting Things Done". Read it here: https://lnkd.in/g_mTzpEx. Let me know your thoughts! And don't forget to check back every Monday for new blog posts.	JIRA over SLACK: The Case for Ticket-based Communication		
 				💡 Even experienced git users sometimes get mixed up one when it's ok to rewrite git history. In my new blog post I go over some of the details with examples of when you should and should not rewrite git history🔗 https://lnkd.in/gr3HxyjE hashtag#GitFlow hashtag#BestPractices hashtag#SoftwareDevelopment hashtag#PullRequests hashtag#TeamworkMatters ✨👩‍💻👨‍💻🚀	Git: When and When not to Rewrite History in Git-flow		
@@ -6,7 +6,15 @@
 				Migrating your team and codebase from Bitbucket to GitHub can be a daunting task, especially if you want to preserve all branches and maintain the development history intact. In this post, we’ll go through the process step-by-step and provide you with scripts to make this transition as smooth as possible.	Git: Migrating a Team and Their Codebase from Bitbucket to GitHub		
 				Last week the issue came up where we needed "backport" a fix from our develop branch into a release branch. I wanted to document some detailed instructions on how you might go about that while keeping your branches compatible. Feel free to send me feed back! :D	Git: Backporting Changes in Git		
 							https://github.blog/2023-10-30-the-architecture-of-todays-llm-applications/
-1	1	1/1/2024	needs work	Most Important Things First This post will be short, as I will leave further detailed discussion herein; focusing on the specific recommendation(s) within each narrowly-scoped post. To me, this is an important life principle, but I’ve also found it to be an important strategy for developing and maintaining code.  There is nothing revolutionary about this, yet I don’t see enough developers paying attention to how they sort their code for readability.  Ordering of words in a function/variable name. Ordering of declaration/calling of functions in a class definition. When Validating Inputs Choosing the most important tickets to get done in a sprint.		Most Important Things First	
+1	1	1/1/2024	needs work	Most Important Things First
+ This post will be short, as I will leave further detailed discussion herein; focusing on the specific recommendation(s) within each narrowly-scoped post. To me, this is an important life principle, but I’ve also found it to be an important strategy for developing and maintaining code.
+ 
+ There is nothing revolutionary about this, yet I don’t see enough developers paying attention to how they sort their code for readability.
+ 
+ Ordering of words in a function/variable name.
+ Ordering of declaration/calling of functions in a class definition.
+ When Validating Inputs
+ Choosing the most important tickets to get done in a sprint.		Most Important Things First	
 2	1	1/15/2024	needs work			Read The Error Message	
 3	1	1/29/2024	go	Dive into effective input validation strategies in my latest Soft-wa.re blog post. Discover why positive test cases triumph over negative ones for cleaner, more reliable code. Learn key practices for validating inputs at system boundaries and enhance your coding efficiency. Join the discussion on this crucial programming topic. #Programming #BestPractices #SoftwareDevelopment	Structuring: When Validating Inputs		
 4	1	2/12/2024					

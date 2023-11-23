@@ -13,6 +13,7 @@ description: A blog of various opinions and ideas on soft-wa.re development
 url: "https://soft-wa.re" # the base hostname & protocol for your site
 google_analytics: G-EBYCG9JSN0
 google_adsense: ca-pub-7409268344688826
+repository: tbeckenhauer/tbeckenhauer.github.io
 include: [ ]
 collections_dir: ./_posts
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Most Important Things First"
-date: 2023-11-28 00:09:00
+date: 2023-11-21 00:09:00
 tags: [Programming, ProgrammingPrinciples, CodingStyle, ItDepends]
 permalink: /most-important-things-first/
 ---

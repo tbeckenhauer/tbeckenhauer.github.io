@@ -1,20 +1,23 @@
 ---
 layout: post
 title:  "Most Important Things First"
-date:   2021-06-21 00:00:00
-tags: [Programing, CodingStyle, ItDepends]
+date:   2023-11-28 00:09:00
+tags: [Programming, ProgrammingPrinciples, CodingStyle, ItDepends]
 permalink: /most-important-things-first/
 ---
 
-This post will be short, as I will leave further detailed discussion herein; focusing on the specific recommendation(s) within each narrowly-scoped post.  To me, this is an important life principle, but I've also found it to be an important strategy for developing and maintaining code.
-
-There is nothing revolutionary about this, yet I don't see enough developers paying attention to how they sort their code for readability.
-
+To me, prioritizing the most important things first is not only a crucial life principle but also a key strategy for developing and maintaining code. The concept may not seem revolutionary, yet I've noticed that many developers overlook the significance of organizing their code for enhanced readability.  Below are a few examples and posts.
 1. [Ordering of words in a function/variable name.](/naming-conventions/)
 2. [Ordering of declaration/calling of functions in a class definition.](/ordering-the-functions-in-your-class/)
 3. [When Validating Inputs](/when-validating-inputs/)
-3. Choosing the most important tickets to get done in a sprint.
+<!-- 4. Choosing the most important tickets to complete in a sprint. -->
 
-<!-- I think this first started to dawn on me when a co-worker was asked me to alphabetize the keys in a object literal, and I thought to myself surely there is a better way.-->
+If first struck me that this was worth talking about when a coworker asked me to alphabetize the keys in an object literal, prompting me to think there must be a more effective approach.  What's the value in alphabatizing, and what meaning is lost? How can we get both? That's discussed in Item 1.  This is part of my series on naming.
 
-<!--Ok, you might have heard before you should prioritize your tasks and work on importance, -->
+Above are just a few oppurtunities to organize your code by importance. Many times what you want to see in code, is first a summary(in some way) and then later the actual implementation, buried below it. Item 2 below helps with that. This is part of my series on structureing.
+
+Item 3, calls to mind the "Garbage In, Garbage Out" principle. While this is currently under "structuring", it also should have a place with throwing exceptions in my series on exceptions where we (don't) handle things outside the scope of our soft-wa.re.
+
+In conclusion, this post serves as an introduction to several series that are all informed by a few principles. Namely, "Most Important Things First".
+
+<!-- You might have often heard about prioritizing tasks and focusing on the most important ones, -->

@@ -20,4 +20,5 @@ Item 3 calls to mind the "Garbage In, Garbage Out" principle. While this is curr
 
 In conclusion, this post serves as an introduction to several series that are all informed by a few principles. Namely, "Most Important Things First".
 
+![Most Important Things First](most-important-things-first.png)
 <!-- You might have often heard about prioritizing tasks and focusing on the most important ones, -->

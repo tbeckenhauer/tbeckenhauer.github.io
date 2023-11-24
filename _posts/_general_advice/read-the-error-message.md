@@ -7,7 +7,7 @@ permalink: /read-the-error-message/
  
 All of this is to say: Learn to Read the Error Message.
 
-![Learn to Read the Source, Luke](/general_advice/read-the-error-message)
+![Learn to Read the Source, Luke](/general_advice/read-the-error-message.png)
 
 See: [Learn to Read the Source, Luke](https://blog.codinghorror.com/learn-to-read-the-source-luke/)
 

@@ -7,6 +7,8 @@ permalink: /ordering-the-functions-in-your-class/
 
 This recommendation is to help out with the readability.  It's pretty straight forward.  
 
+![Structuring: Ordering code blocks](/style_guides/structuring.png)
+
 ## Summary
 There is a phrase for this in journalism, it's: Don't bury the lead. Put the most important thing first.
 

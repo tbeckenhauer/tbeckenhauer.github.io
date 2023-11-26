@@ -9,6 +9,8 @@ permalink: /when-validating-inputs/
 
 [comment]: <> (Note: This is post is part of a pair with [Returning Early]&#40;/returning-early/&#41;)
 
+![Structuring: When Validating Inputs](/style_guides/when-validating-input.png)
+
 Note: Another good and related topic that I won't cover in depth here/yet. Is how when building a codebase/system. You should be validating your input's at the boundary of the system. Don't litter every function you write with checks that variables are of a certain type.  If you want that you need to consider TypeScript or any other typed language. On the backend if you are fetching data from other systems you don't own, you need to be rigorously validating it, On the frontend rigorously validating user input. Everything else in between needs to be rigorously checked via unit testing.
 
 Note: I know it's common for developers to 'return early' from functions or write 'guard clauses'.  I remain unconvinced.  But I do know several programmers that I respect that prefer this. So, maybe I will change my mind later or [maybe I will change everyone elses mind](https://softwareengineering.stackexchange.com/a/18459/36411).

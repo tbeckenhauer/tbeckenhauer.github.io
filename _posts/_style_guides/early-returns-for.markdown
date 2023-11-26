@@ -6,7 +6,7 @@ permalink: /early-returns-for/
 section: 1
 ---
 
-Note: This is post is part of a pair with [When Validating Input](/when-validating-input/)
+Note: This is post is part of a pair with [When Validating Input](/when-validating-inputs/)
 
 In this post we are going to argue for 'guard clauses' and 'returning early'.  Let's look at some of the common arguments for this.
 

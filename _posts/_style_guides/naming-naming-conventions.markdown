@@ -14,6 +14,8 @@ Let's talk about naming things. I don't think it has to be that hard.  I have a 
 1. Most important words first
 2. Consider the scoping
 
+![Naming: Convetions](/style_guides/naming.png)
+
 <!--
 3. maybe suffix your variables with the type
 4. Don't camel/kebab/snake case compound words

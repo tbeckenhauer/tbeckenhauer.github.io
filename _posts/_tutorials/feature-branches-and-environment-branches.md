@@ -9,6 +9,8 @@ This question came up at work recently, so I wanted to document a solution for o
 
 The problem was we had two teams, with two long-running feature branches, both of which needed to use the same environment. In a nutshell the solution was to merge the two feature branches into a new environment branch.  Don't merge that new environment branch. You can keep it separate. I'll elaborate.
 
+![merging two branches]({{ site.url }}/tutorials/feature-branches-and-environment-branches.0.png)
+
 Let's say you have two long-running feature branches `feature-make-new-foo-bar`, and `feature-build-a-hurr-durr`. Branch off of either one and make a `env-public-staging`, so that it's known that branch is specifically for that environment, and push merge commits to it pulling in the latest from the feature branches.  This keep the feature work separate and lets the environment get the latest. 
 
 I ran these commands on [git-school](https://git-school.github.io/visualizing-git/#free).  You'll see a few mistakes in the screenshots, but the commands I have documented here should be good.

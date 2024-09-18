@@ -72,3 +72,5 @@ employees.jane = _.merge({}, employees.tom, {
 {% endhighlight %}
 
 As you can see building the second mock was significantly easier.  For the most part we wanted to keep everything the same except the id, name, and editor.
+
+I would also like to add, hardcoding the id, isn't a great idea, and is out of scope for this blog post. You might want to use either a UUID generator, or a singleton couting up. Unless your id's are meaningfull. In which case you would find yourself back at something like domain specific enum or components.

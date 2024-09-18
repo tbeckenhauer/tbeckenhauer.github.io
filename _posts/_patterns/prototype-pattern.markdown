@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Prototypes and Components to the Rescue"
+title:  "Prototypes & Components for Mocks/Fixtures"
 date:   2016-05-16 00:00:00
 categories: Programing, CodingStyle
 ---

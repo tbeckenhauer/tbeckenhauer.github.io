@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/tbeckenhauer/tbeckenhauer.github.io#readme",
   "dependencies": {
-    "puppeteer": "^19.4.0"
+    "puppeteer": "^24.22.2"
   }
 }

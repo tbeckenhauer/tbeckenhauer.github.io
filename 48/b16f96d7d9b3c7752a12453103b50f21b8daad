@@ -1,0 +1,16 @@
+package-lock.json
+  h_b4e8fce3b624b4 1-6
+serve.sh
+  h_b4e8fce3b624b4 1-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "48b16f96d7d9b3c7752a12453103b50f21b8daad",
+  "prompts": {},
+  "humans": {
+    "h_b4e8fce3b624b4": {
+      "author": "thomas beckenhauer <thomas.beckenhauer.developer@gmail.com>"
+    }
+  }
+}

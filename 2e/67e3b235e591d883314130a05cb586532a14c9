@@ -1,0 +1,24 @@
+_drafts/_generaladvice/start-where-you-are.md
+  s_0d32c288710d12::t_2566a95726a08d 8
+  s_0d32c288710d12::t_3f8a22b8720396 10,12,14,16,18,20,22,24,26,28,30,32,34
+  s_0d32c288710d12::t_5bca53ab5929e4 1-7,9,11,13,15,17,19,21,23,25,27,29,31,33
+_drafts/_generaladvice/develop-your-weaknesses.md
+  s_0d32c288710d12::t_2566a95726a08d 1-9,11,13,15,17,19,21,23,25,27,29,31,33
+  s_0d32c288710d12::t_3f8a22b8720396 10,12,14,16,18,20,22,24,26,28,30,32,34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2e67e3b235e591d883314130a05cb586532a14c9",
+  "prompts": {},
+  "sessions": {
+    "s_0d32c288710d12": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1e212-c94c-7362-8a3e-ce99fb73217d",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "thomas beckenhauer <thomas.beckenhauer.developer@gmail.com>"
+    }
+  }
+}
